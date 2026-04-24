@@ -1,0 +1,28 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/.venv": true,
+        "**/__pycache__": true,
+        "**/.next": true,
+        "**/out": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "tower_kernel/data/lake": true,
+        "tower_kernel/data/master": true,
+        "tower_kernel/data/logs": true,
+        "*.parquet": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/.venv": true,
+        "**/.next": true,
+        "**/build": true,
+        "**/dist": true
+    },
+    "python.analysis.exclude": [
+        "**/node_modules",
+        "**/.venv"
+    ]
+}
