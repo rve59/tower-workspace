@@ -3,18 +3,28 @@ name = "tower-workspace"
 version = "0.1.0"
 description = "TOWER Ecosystem Monorepo"
 authors = [{ name = "Raynier" }]
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.14"
+dependencies = [
+    "polars>=1.38.1",
+    "pyarrow>=23.0.1",
+    "pydantic>=2.13.1",
+    "python-multipart",
+]
 
 [tool.uv.workspace]
 members = [
-    "tower.core",
-    "tower.core/apps/api",
-    "tower.core/apps/data-engine",
-    "tower.core/apps/backend",
+    "tower_core",
+    "tower_core/apps/api",
+    "tower_core/apps/data-engine",
+    "tower_core/apps/backend",
     "agent.libs/lib_market_agents",
     "ferc.libs/lib_ferc_repos",
     "xbrl.libs/lib_xbrl",
     "xbrl.libs/lib_xbrl_auditor",
-    "xbrl.libs/ifrs_guidelines_parser.core"
+    "tower_kernel"
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
 ]

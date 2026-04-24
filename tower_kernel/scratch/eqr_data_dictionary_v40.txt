@@ -1,0 +1,2014 @@
+CUI
+
+NOTE: THIS ATTACHMENT WILL NOT BE PUBLISHED IN THE CODE OF
+FEDERAL REGULATIONS
+
+EQR DATA DICTIONARY
+VERSION 4.0
+DOCKET NO. RM23-9-000
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+IDENTIFICATION DATA
+AGENT
+Field Name
+Filer Unique
+Identifier
+
+Required
+Field and associated
+requirements are
+dependent on future
+system design.
+
+Value
+
+Definition
+
+Page 1 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+IDENTIFICATION DATA
+SELLER
+Field Name
+
+Required
+
+Filer Unique
+Identifier
+
+Field and associated
+requirements are
+dependent on future
+system design.
+
+Value
+
+Definition
+
+Y
+
+The name of the public utility that is authorized
+to make sales as indicated in the company’s
+FERC tariff(s) under section 205 of the Federal
+Unrestricted text
+Power Act or the name of the non-public utility
+that is required to file the EQR under section
+220 of the Federal Power Act.
+
+Seller CID
+
+Y
+
+A 6-digit integer The Company Identifier (CID) obtained through
+preceded by the the Commission’s Company Registration
+letter “C”
+system.
+
+Seller Contact
+
+Y
+
+Unrestricted text
+
+The eRegistered person authorized by the Seller
+to be contacted about the Seller’s EQR.
+
+Y
+
+Phone number
+
+The eRegistered phone number of the Seller
+Contact.
+
+Y
+
+A valid email
+address
+
+The eRegistered email of the Seller Contact.
+
+Seller
+
+Seller Contact
+Phone
+Seller Contact
+Email
+
+Page 2 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+Field Names in bold font indicate a new data field in Version 4.0 of the EQR Data Dictionary.
+IDENTIFICATION DATA
+SELLER
+Field Name
+
+Required
+
+Value
+
+Definition
+A one digit reference number to indicate the
+quarter for which the filing is submitted. 1 = First
+Quarter; 2 = Second Quarter; 3 = Third Quarter;
+and 4 = Fourth Quarter.
+
+Filing
+Quarter
+
+Y
+
+1, 2, 3, or 4
+
+Filing Year
+
+Y
+
+YYYY
+
+Qualifying
+Facility
+
+Y
+
+Y (Yes), N (No)
+
+Notes
+
+Y
+For all refilings,
+include a reason
+for refiling and a
+description or
+summary of
+revisions.
+
+Unrestricted text
+
+A four-digit reference number to indicate the year
+for which the data is submitted.
+The Seller is a Qualifying Facility as defined
+under 18 C.F.R. §§ 292.201-211.
+
+Descriptive text accompanying all refilings.
+
+Page 3 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+Field Names in bold font indicate a new data field in Version 4.0 of the EQR Data Dictionary.
+CONTRACT DATA
+Field Name
+
+Required
+
+Contract
+Unique ID
+
+Field and associated
+requirements are
+dependent on future
+system design.
+
+Seller
+
+Customer is
+RTO/ISO
+
+Y
+
+Y
+
+Value
+
+Definition
+
+Unrestricted
+text
+
+The name of the public utility that is authorized to make sales as
+indicated in the company’s FERC tariff(s) under section 205 of the
+Federal Power Act or the name of the non-public utility that is
+required to file the EQR under section 220 of the Federal Power Act.
+
+Sellers should indicate whether the Customer is an RTO/ISO. If the
+Customer is an RTO/ISO, Sellers should indicate the name in
+Y (Yes), N (No) Customer Company Name, as identified in the Commission’s
+Company Registration system, and as provided on the Commission’s
+website.
+
+Page 4 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+Customer
+Company
+Name
+
+Contract
+Affiliate
+
+Required
+
+Y
+
+Y
+
+Value
+
+Definition
+
+Unrestricted
+text
+
+The name of the purchaser of contract products and services. If the
+purchaser is an RTO/ISO, then use the RTO/ISO name from the list of
+allowable entries. If the purchaser is not an RTO/ISO and is
+associated with a CID, then use the spelling of the name reflected in
+the Commission’s Company Registration system. If the purchaser is
+not an RTO/ISO and is not associated with a CID, then use the
+spelling of the purchaser’s name reflected in the Commissiongenerated Identifier (GID), if applicable.
+
+The Customer is an affiliate as defined under 18 C.F.R. § 35.36(a)(9)
+Y (Yes), N (No) or a division of the specified entity that operates as a functional unit as
+defined under 18 C.F.R. § 358.3.
+
+Page 5 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+FERC Tariff
+Reference
+
+Contract Service
+Agreement ID
+
+Required
+
+Y
+
+Y
+
+Value
+
+Definition
+
+Unrestricted
+text
+
+The FERC Tariff Reference cites the document that specifies the
+terms and conditions under which a Seller is authorized to make
+transmission sales, power sales or sales of related jurisdictional
+services at cost-based rates or at market-based rates. Sellers should
+report the FERC Tariff Reference in a manner consistent with the
+tariff, rate schedule or service agreement reported in the eTariff
+system, including the Tariff Title, Section Title and Tariff Record
+Title assigned to the tariff, rate schedule or service agreement. The
+FERC Tariff Reference is not a docket number. If the sales are
+market-based, the tariff that is specified in the Commission order
+granting the Seller market-based rate authority must be listed. If the
+sales are cost-based, the Seller must specify the FERC-approved
+tariff or rate schedule under which the sales are made. If a nonpublic utility (NPU) Seller has a FERC-approved reciprocity
+transmission tariff, then the NPU should enter the tariff title of the
+reciprocity tariff. If an NPU does not have a FERC Tariff Reference,
+the Seller should enter “NPU.”
+
+Unrestricted
+text
+
+A unique identifier assigned by the Seller to each service agreement
+that can be used by the Seller to provide the agreement to the
+Commission, if requested. The Contract Service Agreement ID
+should seldom change throughout the life of the contract.
+
+Page 6 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+Contract
+Execution Date
+
+Commencement
+Date of Contract
+Terms
+
+Contract
+Termination
+Date
+
+Required
+
+Value
+
+Definition
+
+Y
+
+The date the contract is signed. If the parties signed on different
+dates, then report the most recent date signed. If there is no signed
+YYYYMMDD
+contract, then report the date upon which the parties made the legally
+binding agreement on the price of a transaction.
+
+Y
+
+The date the terms of the contract reported in Contract Affiliate,
+Contract Termination Date, Extension Provision Description, Class
+Name, Term Name, Increment Name, Increment Peaking Name,
+Product Type, Product Name, Quantity, Units, Rate, Rate Minimum,
+Rate Maximum, Rate Description, Rate Units, Point of Receipt
+Balancing Authority Area, Point of Receipt Specific Location, Point
+YYYYMMDD of Delivery Balancing Authority Area, Point of Delivery Specific
+Location, Begin Date, and End Date became effective. If there are
+one or more amendments to these terms in one quarter, report the
+effective date of the most recent amendment. If the contract or the
+most recent reported amendment does not have an effective date, the
+date when service began pursuant to the contract or most recent
+reported amendment may be used.
+
+If specified in
+contract. If not
+specified in the
+YYYYMMDD The date that the contract expires.
+contract, field should
+remain blank.
+
+Page 7 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+Required
+
+Value
+
+Definition
+
+Actual
+Termination
+Date
+
+If contract
+terminated.
+If contract has not YYYYMMDD The date the contract actually terminates.
+terminated, field
+should remain blank.
+
+Extension
+Provision
+Description
+
+Required. If not
+specified in contract,
+enter None or N/A.
+
+Class Name
+
+Y
+
+Class Name
+
+Y
+
+Class Name
+
+Y
+
+Class Name
+
+Y
+Cannot be reported in
+conjunction with
+another Class Name
+
+Unrestricted
+text
+
+Description of terms that provide for the continuation of the contract.
+
+For transmission sales, a service or product that always has priority
+F - Firm
+over non-firm service. For power sales, a service or product that is
+not interruptible for economic reasons.
+For transmission sales, a service that is reserved and/or scheduled on
+an as-available basis and is subject to curtailment or interruption at a
+lesser priority compared to Firm service. For an energy sale, a
+NF - Non-Firm
+service or product for which delivery or receipt of the energy may be
+interrupted for any reason or no reason, without liability on the part
+of either the buyer or seller.
+UP - Unit
+Designates a dedicated sale of energy and capacity from one or more
+Power Sale than one specified generation unit(s).
+N/A - Not
+Applicable
+
+To be used only when the other available Class Names do not apply.
+
+Page 8 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+Term Name
+
+Required
+
+Y
+
+Increment Name
+
+Y
+
+Increment Name
+
+Y
+
+Increment Name
+
+Y
+
+Increment Name
+
+Y
+
+Increment Name
+
+Y
+
+Increment Name
+
+Y
+
+Value
+
+Definition
+
+LT - Long Term
+ST - Short Term The duration of a contract. Contracts with durations of one year or
+greater are long-term. Contracts with durations less than one year are
+Evergreen or
+Master Agreement short-term. Contracts without a specified termination date are
+evergreen or master agreements.
+N/A - Not
+applicable
+Terms of the contract (if specifically noted in the contract) set for more
+5 - Five-Minute than 0 minutes and less than or equal to 5 minutes (> 0 and ≤ 5
+minutes).
+Terms of the contract (if specifically noted in the contract) set for more
+15 - Fifteen-Minute than 5 minutes and less than or equal to 15 minutes (> 5 and ≤ 15
+minutes).
+Terms of the contract (if specifically noted in the contract) set for more
+H - Hourly
+than 15 minutes and less than or equal to 6 hours (> 15 minutes and ≤ 6
+hours).
+Terms of the contract (if specifically noted in the contract) set for more
+D - Daily
+than 6 and up to 60 hours (> 6 and ≤ 60 hours).
+Terms of the contract (if specifically noted in the contract) set for over
+W - Weekly
+60 hours and up to 168 hours (> 60 and ≤ 168 hours).
+Terms of the contract (if specifically noted in the contract) set for more
+M - Monthly
+than 168 hours up to, but not including, one year (> 168 hours and < 1
+year).
+
+Page 9 of 30
+
+CUI
+
+#
+
+Docket No. RM23-9-000
+
+CONTRACT DATA
+Field Name
+
+Required
+
+Value
+
+Increment Name
+
+Y
+
+Y - Yearly
+
+Increment Name
+
+Y
+
+N/A - Not
+Applicable
+
+To be used only when other available Increment Names do not apply.
+
+FP - Full Period
+
+The product described may be sold during those hours designated as onpeak and off-peak, or during a combination of hours designated as onpeak and off-peak at the point of delivery.
+
+Increment
+Peaking Name
+Increment
+Peaking Name
+Increment
+Peaking Name
+Increment
+Peaking Name
+Product Type
+
+Y
+
+Y
+Y
+Y
+Y
+
+Product Type
+
+Y
+
+Product Type
+
+Y
+
+Product Type
+
+Y
+
+Product Type
+
+Y
+
+Definition
+Terms of the contract (if specifically noted in the contract) set for one
+year or more (≥ 1 year).
+
+The product described may be sold only during those hours designated
+as off-peak at the point of delivery.
+The product described may be sold only during those hours designated
+P - Peak
+as on-peak at the point of delivery.
+N/A - Not
+To be used only when the increment peaking name is not specified in
+Applicable
+the contract.
+CB - Cost-Based The product is sold under a FERC-approved cost-based rate.
+MB - MarketThe product is sold under a FERC-approved market-based rate.
+Based
+The product is sold under a FERC-approved transmission tariff or rate
+T - Transmission
+schedule.
+NPU - Non-Public The product is sold by a non-public utility that is required to file the
+Utility
+EQR under section 220 of the Federal Power Act.
+Other
+The product cannot be characterized by the other Product Types.
+OP - Off-Peak
+
+Page 10 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+Required
+
+Product Name
+
+Y
+
+Value
+
+Definition
+
+See Product Name
+Description of product being offered.
+Table, Appendix A.
+
+Quantity
+
+If specified in
+contract. If not
+Number with up to
+Quantity for the contract product identified.
+specified in the
+4 decimals
+contract, field should
+remain blank.
+
+Units
+
+If specified in
+contract. If not
+specified in the
+contract, field should
+remain blank.
+
+See Units Table,
+Appendix C.
+
+Measure stated in the contract for the product sold.
+
+Y
+Rate
+
+Must be reported if
+specified in the
+contract.
+Y
+
+Rate Minimum
+
+Must be reported if
+specified in the
+contract.
+
+Number with up to
+The charge for the product per unit as stated in the contract.
+4 decimals
+
+Number with up to
+Minimum rate to be charged per the contract, if a range is specified.
+4 decimals
+
+Page 11 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+Required
+Y
+
+Rate Maximum
+
+Must be reported if
+specified in the
+contract.
+
+Rate Description
+
+Y
+
+Rate Units
+
+If specified in the
+contract
+
+If specified in
+Point of Receipt
+contract. If not
+Balancing
+specified in the
+Authority Area
+contract, field should
+(PORBAA)
+remain blank.
+
+Value
+
+Definition
+
+Number with up to
+Maximum rate to be charged per the contract, if a range is specified.
+4 decimals
+
+Text description of rate. If the rate is currently available in eLibrary or
+eTariff, or successors of these systems, a citation to the relevant FERC
+tariff information must be provided, including either the FERC
+Accession Number or the Tariff Title, Section Title and Tariff Record
+Unrestricted text
+Title. If the rate is not available in eLibrary or eTariff, or successors of
+these systems, include the rate algorithm, if rate is calculated in the
+contract, including bases and methods of calculations, and a detailed
+citation to the contract.
+See Rate Units
+Measure stated in the contract for the product sold.
+Table, Appendix D.
+The registered Balancing Authority Area where the jurisdictional
+See the list of transmission or transmission-related product is received, if designated
+allowable entries in the contract. The Balancing Authority Area will be identified with
+the abbreviation used in OASIS applications. If receipt occurs at a
+on the EQR
+trading hub, then report the standardized hub name from the list of
+website.
+allowable names.
+
+Page 12 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+Value
+
+Definition
+
+Point of Receipt Required for longterm, firm, point-toSpecific
+point transmission
+Location
+agreements.
+(PORSL)
+
+Unrestricted text.
+
+The specific location at which the jurisdictional transmission or
+transmission-related product is received, if designated in the contract.
+
+If specified in
+Point of
+Contract. If not
+Delivery
+specified in the
+Balancing
+Authority Area contract, field should
+remain blank.
+(PODBAA)
+
+The registered Balancing Authority Area where a jurisdictional product
+is delivered and/or service ends for a transmission or transmissionrelated jurisdictional product. The Balancing Authority will be
+See the EQR
+identified with the abbreviation used in OASIS applications. If
+website for list of
+delivery occurs at the interconnection of two Balancing Authority
+allowable values.
+Areas, the Balancing Authority Area that the product is entering should
+be used. If delivery occurs at a trading hub, then report the
+standardized hub name from the list of allowable names.
+
+Point of
+Delivery
+Specific
+Location
+(PODSL)
+
+Required
+
+Required for longterm, firm, point-topoint transmission
+contracts.
+
+Unrestricted text.
+
+The specific location at which the jurisdictional transmission or
+transmission-related product is delivered if designated in the contract.
+
+Page 13 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+CONTRACT DATA
+Field Name
+
+Required
+
+Value
+
+Definition
+
+Begin Date
+
+YYYYMMDD
+If specified in
+contract. If not
+Note, the date
+First date for the sale of the product at the rate specified.
+specified in the
+format may change
+contract, field should
+as a result of future
+remain blank.
+system design.
+
+End Date
+
+YYYYMMDD
+If specified in
+contract. If not
+Note, the date
+Last date for the sale of the product at the rate specified.
+specified in the
+format may change
+contract, field should
+as a result of future
+remain blank.
+system design.
+
+Required if Other or
+Product Name
+Bundled are selected
+Description*
+as the Product Name
+
+A description of the product(s) if selecting Other as the Product Name,
+or two or more of the Bundled services from among the list of
+allowable Product Names.
+
+* Field Names in bold font indicate a new data field in Version 4.0 of the EQR Data Dictionary.
+
+Page 14 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+TRANSACTION DATA
+Field Name
+
+Required
+
+Value
+
+Definition
+
+Unrestricted text
+
+The name of the public utility that is authorized to make sales
+as indicated in the company’s FERC tariff(s) under section
+205 of the Federal Power Act or the name of the non-public
+utility that is required to file the EQR under section 220 of the
+Federal Power Act.
+
+Unrestricted text
+
+The name of the purchaser of contract products and services.
+If the purchaser is an RTO/ISO, then use the RTO/ISO name
+from the list of allowable entries. If the purchaser is not an
+RTO/ISO and is associated with a CID, then use the spelling
+of the name reflected in the Commission’s Company
+Registration system. If the purchaser is not an RTO/ISO and
+is not associated with a CID, then use the spelling of the
+purchaser’s name reflected in the Commission-generated
+Identifier (GID), if applicable.
+
+Field and
+associated
+Transaction Unique requirements
+ID
+are dependent
+on future
+system design.
+
+Seller
+
+Customer Company
+Name
+
+Y
+
+Y
+
+Page 15 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+TRANSACTION DATA
+Field Name
+
+FERC Tariff
+Reference
+
+Required
+
+Y
+
+Value
+
+Definition
+
+Unrestricted text
+
+The FERC Tariff Reference cites the document that specifies
+the terms and conditions under which a Seller is authorized to
+make transmission sales, power sales or sales of related
+jurisdictional services at cost-based rates or at market-based
+rates. Sellers should report the FERC Tariff Reference in a
+manner consistent with the tariff, rate schedule or service
+agreement reported in the eTariff system, including the Tariff
+Title, Section Title and Tariff Record Title assigned to the
+tariff, rate schedule or service agreement. The FERC Tariff
+Reference is not a docket number. If the sales are marketbased, the tariff that is specified in the Commission order
+granting the Seller market-based rate authority must be listed.
+If the sales are cost-based, the Seller must specify the FERCapproved tariff or rate schedule under which the sales are
+made. If a non-public utility (NPU) Seller has a FERCapproved reciprocity transmission tariff, then the NPU should
+enter the tariff title of the reciprocity tariff. If an NPU does
+not have a FERC Tariff Reference, the Seller should enter
+“NPU.”
+
+Page 16 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+TRANSACTION DATA
+Field Name
+
+Contract Service
+Agreement ID
+
+Required
+
+Value
+
+Y
+
+Unrestricted text
+
+Y
+
+Unrestricted text
+
+Y
+
+YYYYMMDDHHMM
+
+Y
+
+YYYYMMDDHHMM
+
+Trade Date
+
+Y
+
+YYYYMMDD
+
+Type of Rate
+
+Y
+
+Fixed
+
+Type of Rate
+
+Y
+
+Formula
+
+Transaction
+Identifier
+Transaction Begin
+Date
+Transaction End
+Date
+
+Definition
+A unique identifier assigned by the Seller to each service
+agreement that can be used by the Seller to provide the
+agreement to the Commission, if requested. The Contract
+Service Agreement ID should seldom change throughout the
+life of the contract.
+A reference number assigned by the Seller for each transaction
+or multiple related products in a transaction.
+First date and time the product is sold at the specified price.
+Last date and time the product is sold at the specified price.
+The date upon which the parties made the legally binding
+agreement on the price of a transaction. If the Trade Date
+cannot be identified, then report the Contract Execution Date
+in the Trade Date data field.
+A fixed charge per unit of consumption. No variables are used
+to determine this rate.
+A calculation of a rate based upon a formula that does not
+contain an electric index component.
+
+Page 17 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+TRANSACTION DATA
+Field Name
+
+Required
+
+Value
+
+Type of Rate
+
+Y
+
+Electric Index
+
+Type of Rate
+
+Y
+
+RTO/ISO
+
+Time Zone
+
+Y
+
+Point of Delivery
+Balancing Authority
+Area (PODBAA)
+
+Y
+
+Point of Delivery
+Specific Location
+(PODSL)
+
+Y
+PODSL may be
+left blank if a
+hub name is
+reported in
+PODBAA in
+Transaction
+data.
+
+Definition
+A calculation of a rate based upon an index or a formula that
+contains an electric index component. An electric index
+includes an index published by an index publisher, such as
+ICE and the Chicago Mercantile Exchange Group (CME), or a
+price published by an RTO/ISO (e.g., PJM West or Illinois
+Hub). If the transaction uses an electric-based index in any
+way, either as a base price or to determine a basis, report as
+electric index.
+If the price is the result of an RTO/ISO market or the sale is
+made to the RTO/ISO.
+
+See Time Zone Table,
+The time zone where the transaction takes place.
+Appendix B
+The registered Balancing Authority Area abbreviation used in
+See the EQR website
+OASIS applications. If delivery occurs at a trading hub, then
+for list of allowable
+report the standardized hub name from the list of allowable
+values.
+names.
+
+Unrestricted text.
+
+The specific location at which the product is delivered. If
+delivery occurs at a trading hub, then the specific location is
+not required.
+
+Page 18 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+TRANSACTION DATA
+Field Name
+
+Required
+
+Class Name
+
+Y
+
+Class Name
+
+Y
+
+Class Name
+
+Y
+
+Class Name
+
+Y
+
+Value
+
+Definition
+
+A sale, service or product that is not interruptible for economic
+reasons.
+A sale for which delivery or receipt of the energy may be
+NF - Non-firm
+interrupted for any reason or no reason, without liability on the
+part of either the buyer or seller.
+Designates a dedicated sale of energy and capacity from one or
+UP - Unit Power Sale
+more than one specified generation unit(s).
+To be used only when the other available class names do not
+N/A - Not Applicable
+apply.
+F - Firm
+
+LT - Long Term
+Transactions with durations of one year or greater are longST - Short Term
+term. Transactions with shorter durations are short-term.
+N/A - Not Applicable
+
+Term Name
+
+Y
+
+Increment Name
+
+Y
+
+5 - Five-Minute
+
+Terms of the particular sale set for more than 0 minutes and
+less than or equal to 5 minutes (> 0 and ≤ 5 minutes).
+
+Increment Name
+
+Y
+
+15 - Fifteen-Minute
+
+Terms of the particular sale set for more than 5 minutes and
+less than or equal to 15 minutes (> 5 and ≤ 15 minutes).
+
+H - Hourly
+
+Terms of the particular sale set for more than 15 minutes and
+less than or equal to 6 hours (> 15 minutes and ≤ 6 hours).
+Includes LMP based sales in ISO/RTO markets.
+
+Increment Name
+
+Y
+
+Page 19 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+TRANSACTION DATA
+Field Name
+Increment Name
+
+Increment Name
+
+Required
+Y
+
+Y
+
+Increment Name
+
+Y
+
+Increment Name
+
+Y
+
+Increment Name
+
+Y
+
+Increment Peaking
+Name
+Increment Peaking
+Name
+Increment Peaking
+Name
+Increment Peaking
+Name
+
+Y
+Y
+Y
+Y
+
+Value
+
+Definition
+
+D - Daily
+
+Terms of the particular sale set for more than 6 and up to 60
+hours (> 6 and ≤ 60 hours). Includes sales over a peak or offpeak block during a single day.
+
+W - Weekly
+
+Terms of the particular sale set for over 60 hours and up to 168
+hours (> 60 and ≤ 168 hours). Includes sales for a full week
+and sales for peak and off-peak blocks over a particular week.
+
+Terms of the particular sale set for set for more than 168 hours
+up to, but not including, one year (> 168 hours and < 1 year).
+M - Monthly
+Includes sales for full month or multi-week sales during a
+given month.
+Terms of the particular sale set for one year or more (≥ 1 year).
+Y - Yearly
+Includes all long-term contracts with defined pricing terms
+(fixed-price, formula, or index).
+To be used only when other available increment names do not
+N/A - Not Applicable
+apply.
+The product described was sold during Peak and Off-Peak
+FP - Full Period
+hours.
+The product described was sold only during those hours
+OP - Off-Peak
+designated as off-peak at the point of delivery.
+The product described was sold only during those hours
+P - Peak
+designated as on-peak at the point of delivery.
+To be used only when the other available increment peaking
+N/A - Not Applicable
+names do not apply.
+Page 20 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+TRANSACTION DATA
+Field Name
+
+Required
+
+Value
+
+Definition
+
+Product Name
+
+Y
+
+Transaction
+Quantity
+
+Y
+
+Price
+
+Y
+
+Rate Units
+
+Y
+
+Standardized
+Quantity
+
+Y
+
+Standardized Price
+
+Y
+
+Total Transmission
+Charge
+
+Y
+If no
+Transmission
+Charge to
+report, enter
+“0.”
+
+Number with up to 2 Payments received for transmission services when explicitly
+decimals.
+identified.
+
+Total Transaction
+Charge
+
+Y
+
+Number with up to 2 Transaction Quantity times Price plus Total Transmission
+decimals
+Charge.
+
+See Product Names
+Description of product being offered.
+Table, Appendix A.
+Number with up to 10
+The quantity of the product in this transaction record.
+decimals.
+Number with up to 10 Actual price charged for the product per unit. The price
+decimals.
+reported cannot be averaged or otherwise aggregated.
+See Rate Units Table,
+Measure appropriate to the price of the product sold.
+Appendix D
+For Product Names Energy, Capacity, and Booked Out Power
+Number with up to 10 only. Specify the quantity in MWh if the product is Energy or
+decimals.
+Booked Out Power and specify the quantity in MW-month if
+the product is Capacity.
+For Product Names Energy, Capacity, and Booked Out Power
+Number with up to 10 only. Specify the price in $/MWh if the product is Energy or
+decimals.
+Booked Out Power and specify the price in $/MW-month if
+the product is Capacity.
+
+Page 21 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+Note: Bold font indicates a new Product Name in Version 4.0 of the EQR Data Dictionary.
+APPENDIX A - PRODUCT NAMES
+
+Product Name
+
+BLACK START SERVICE
+
+Contract
+Product
+Y
+
+BOOKED OUT POWER
+
+Transaction
+Product
+
+Definition
+
+Y
+
+Service available after a system-wide blackout where a
+generator participates in system restoration activities
+without the availability of an outside electric supply
+(Ancillary Service).
+
+Y
+
+Energy or capacity contractually committed bilaterally for
+delivery but not actually delivered due to some offsetting or
+countervailing trade (Transaction only).
+
+BUNDLED
+
+Y
+
+Y
+
+CAPACITY
+
+Y
+
+Y
+
+CUSTOMER CHARGE
+
+Y
+
+Y
+
+DIRECT ASSIGNMENT
+FACILITIES CHARGE
+
+Y
+
+EMERGENCY ENERGY
+
+Y
+
+Y
+
+ENERGY
+
+Y
+
+Y
+
+Services provided for two or more products listed in
+Appendix A that are sold and priced together. The bundled
+components must be listed as spelled in Appendix A in the
+Product Name Description field, separated by a delimiter.
+A quantity of demand that is charged on a $/KW or $/MW
+basis.
+Fixed contractual charges assessed on a per customer basis
+that could include billing service.
+Charges for facilities or portions of facilities that are
+constructed or used for the sole use/benefit of a particular
+transmission customer.
+Energy or capacity provided to another entity during
+critical situations.
+A quantity of electricity that is sold or transmitted over a
+period of time.
+Page 22 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+APPENDIX A - PRODUCT NAMES
+
+Product Name
+
+ENERGY IMBALANCE
+
+Contract
+Product
+
+Y
+
+Transaction
+Product
+
+Definition
+
+Y
+
+Service provided when a difference occurs between the
+scheduled and the actual delivery of energy to a load
+obligation (Ancillary Service). For Contracts, reported if
+the contract provides for sale of the product. For
+Transactions, sales by third-party providers (i.e., nontransmission function) are reported.
+
+ENERGY IMBALANCE
+MARKET
+
+Y
+
+Y
+
+EXCHANGE
+
+Y
+
+Y
+
+FUEL CHARGE
+
+Y
+
+Y
+
+GENERATOR IMBALANCE
+
+Y
+
+Y
+
+Product sold in a Commission-approved energy imbalance
+market for the purpose of balancing real-time supply and
+demand.
+Transaction whereby the receiver accepts delivery of
+energy for a supplier’s account and returns energy at times,
+rates, and in amounts as mutually agreed if the receiver is
+not an RTO/ISO.
+Charge based on the cost or amount of fuel used for
+generation.
+Service provided when a difference occurs between the
+output of a generator located in the Transmission
+Provider’s Control Area and a delivery schedule from that
+generator to (1) another Control Area or (2) a load within
+the Transmission Provider’s Control Area over a single
+hour (Ancillary Service). For Contracts, reported if the
+contract provides for sale of the product. For Transactions,
+sales by third-party providers (i.e., non-transmission
+function) are reported.
+Page 23 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+APPENDIX A - PRODUCT NAMES
+
+Product Name
+GRANDFATHERED BUNDLED
+
+Contract
+Product
+Y
+
+INTERCONNECTION
+AGREEMENT
+
+Y
+
+MEMBERSHIP AGREEMENT
+
+Y
+
+MUST RUN AGREEMENT
+
+Y
+
+NEGOTIATED-RATE
+TRANSMISSION
+
+Y
+
+NETWORK INTEGRATION
+TRANSMISSION SERVICE
+AGREEMENT
+
+Y
+
+NETWORK OPERATING
+AGREEMENT
+
+Y
+
+OTHER
+
+Y
+
+POINT-TO-POINT AGREEMENT
+
+Y
+
+Transaction
+Product
+Y
+
+Definition
+Services provided for bundled transmission, ancillary
+services and/or energy under contracts effective prior to
+Order No. 888’s OATTs.
+Contract that provides the terms and conditions for a
+generator, distribution system owner, transmission owner,
+transmission provider, or transmission system to physically
+connect to a transmission system or distribution system.
+Agreement to participate and be subject to rules of a system
+operator.
+An agreement that requires a unit to run.
+
+Y
+
+Transmission performed under a negotiated rate contract
+(applies only to merchant transmission companies).
+Transmission service under contract providing network
+service.
+
+Y
+
+An executed agreement that contains the terms and
+conditions under which a network customer operates its
+facilities and the technical and operational matters
+associated with the implementation of network integration
+transmission service.
+Any product or combination of products not listed in
+Appendix A.
+Transmission service under contract between specified
+Points of Receipt and Delivery.
+Page 24 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+APPENDIX A - PRODUCT NAMES
+
+Product Name
+
+Contract
+Product
+
+Transaction
+Product
+
+Definition
+Service provided as a stand-by resource to support
+autonomous, pre-programmed changes in output to rapidly
+arrest large changes in frequency until dispatched resources
+can take over.
+The ability to change the output of real power from a
+generating unit per some unit of time.
+
+PRIMARY FREQUENCY
+RESPONSE
+
+Y
+
+Y
+
+RAMPING
+
+Y
+
+Y
+
+REACTIVE SUPPLY & VOLTAGE
+CONTROL
+
+Y
+
+Y
+
+Production or absorption of reactive power to maintain
+voltage levels on transmission systems (Ancillary Service).
+
+REAL POWER TRANSMISSION
+LOSS
+
+Y
+
+Y
+
+The loss of energy, resulting from transporting power over
+a transmission system.
+
+REGULATION & FREQUENCY
+RESPONSE
+
+Y
+
+Y
+
+Service providing for continuous balancing of resources
+(generation and interchange) with load, and for maintaining
+scheduled interconnection frequency by committing on-line
+generation where output is raised or lowered and by other
+non-generation resources capable of providing this service
+as necessary to follow the moment-by-moment changes in
+load (Ancillary Service). For Contracts, reported if the
+contract provides for sale of the product. For Transactions,
+sales by third-party providers (i.e., non-transmission
+function) are reported.
+
+RENEWABLE ENERGY CREDIT
+(REC)
+
+Y
+
+Y
+
+The sale of jurisdictional renewable energy credits (RECs).
+
+Page 25 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+APPENDIX A - PRODUCT NAMES
+
+Product Name
+
+REQUIREMENTS SERVICE
+
+SCHEDULE SYSTEM CONTROL
+& DISPATCH
+
+SPINNING RESERVE
+
+Contract
+Product
+
+Y
+
+Y
+
+Y
+
+Transaction
+Product
+
+Definition
+
+Y
+
+Firm, load-following power supply necessary to serve a
+specified share of customer’s aggregate load during the
+term of the agreement. Requirements service may include
+some or all of the energy, capacity and ancillary service
+products. (If the components of the requirements service
+are priced separately, they should be reported separately in
+the transactions tab.)
+
+Y
+
+Scheduling, confirming and implementing an interchange
+schedule with other Balancing Authorities, including
+intermediary Balancing Authorities providing transmission
+service, and ensuring operational security during the
+interchange transaction (Ancillary Service).
+
+Y
+
+Unloaded synchronized generating capacity that is
+immediately responsive to system frequency and that is
+capable of being loaded in a short time period or nongeneration resources capable of providing this service
+(Ancillary Service). For Contracts, reported if the contract
+provides for sale of the product. For Transactions, sales by
+third-party providers (i.e., non-transmission function) are
+reported.
+
+Page 26 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+APPENDIX A - PRODUCT NAMES
+
+Product Name
+
+SUPPLEMENTAL RESERVE
+
+SYSTEM OPERATING
+AGREEMENTS
+
+TOLLING ENERGY
+
+Contract
+Product
+
+Y
+
+Transaction
+Product
+
+Definition
+
+Y
+
+Service needed to serve load in the event of a system
+contingency, available with greater delay than SPINNING
+RESERVE. This service may be provided by generating
+units that are on-line but unloaded, by quick-start
+generation, or by interruptible load or other non-generation
+resources capable of providing this service (Ancillary
+Service). For Contracts, reported if the contract provides
+for sale of the product. For Transactions, sales by thirdparty providers (i.e., non-transmission function) are
+reported.
+
+Y
+
+An executed agreement that contains the terms and
+conditions under which a system or network customer shall
+operate its facilities and the technical and operational
+matters associated with the implementation of network.
+
+Y
+
+Energy sold from a plant whereby the buyer provides fuel
+to a generator (seller) and receives power in return for preestablished fees.
+
+TRANSMISSION OWNERS
+AGREEMENT
+
+Y
+
+UPLIFT
+
+Y
+
+Y
+
+The agreement that establishes the terms and conditions
+under which a transmission owner transfers operational
+control over designated transmission facilities.
+Y
+
+A make-whole payment by an RTO/ISO to a utility.
+
+Page 27 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+APPENDIX B - TIME ZONE
+Time Zone
+AD
+AP
+AS
+CD
+CP
+CS
+ED
+EP
+ES
+MD
+MP
+MS
+PD
+PP
+PS
+
+Definition
+Atlantic Daylight
+Atlantic Prevailing
+Atlantic Standard
+Central Daylight
+Central Prevailing
+Central Standard
+Eastern Daylight
+Eastern Prevailing
+Eastern Standard
+Mountain Daylight
+Mountain Prevailing
+Mountain Standard
+Pacific Daylight
+Pacific Prevailing
+Pacific Standard
+
+Page 28 of 30
+
+CUI
+
+#
+
+Docket No. RM23-9-000
+
+APPENDIX C - UNITS
+Units
+KV
+KVA
+KVR
+KW
+KWH
+KW-DAY
+KW-MO
+KW-WK
+KW-YR
+MVAR-YR
+MW
+MWH
+MW-DAY
+MW-MO
+MW-WK
+MW-YR
+RKVA
+FLAT RATE
+
+Definition
+Kilovolt
+Kilovolt Amperes
+Kilovar
+Kilowatt
+Kilowatt Hour
+Kilowatt Day
+Kilowatt Month
+Kilowatt Week
+Kilowatt Year
+Megavar Year
+Megawatt
+Megawatt Hour
+Megawatt Day
+Megawatt Month
+Megawatt Week
+Megawatt Year
+Reactive Kilovolt Amperes
+Flat Rate
+
+Page 29 of 30
+
+CUI
+
+Docket No. RM23-9-000
+
+#
+
+Note: Bold font indicates new Rate Units in Version 4.0 of the EQR
+Data Dictionary.
+APPENDIX D - RATE UNITS
+Rate Units
+$/KV
+$/KVA
+$/KVR
+$/KW
+$/KWH
+$/KW-DAY
+$/KW-MO
+$/KW-WK
+$/KW-YR
+$/MW
+$/MWH
+$/MW-DAY
+$/MW-MO
+$/MW-WK
+$/MW-YR
+$/MVAR-YR
+$/RKVA
+CENTS
+CENTS/KVR
+CENTS/KWH
+FLAT RATE
+MILLS/KWH
+MW/MIN
+MW/0.1 HZ
+
+Definition
+dollars per kilovolt
+dollars per kilovolt amperes
+dollars per kilovar
+dollars per kilowatt
+dollars per kilowatt hour
+dollars per kilowatt day
+dollars per kilowatt month
+dollars per kilowatt week
+dollars per kilowatt year
+dollars per megawatt
+dollars per megawatt hour
+dollars per megawatt day
+dollars per megawatt month
+dollars per megawatt week
+dollars per megawatt year
+dollars per megavar year
+dollars per reactive kilovar amperes
+cents
+cents per kilovolt amperes
+cents per kilowatt hour
+rate not specified in any other units
+mills per kilowatt hour
+megawatts per minute
+megawatts per 0.1 hertz
+
+Page 30 of 30
+
+

@@ -1,0 +1,74 @@
+[
+  {
+    "rule_id": "F.24.1",
+    "category": "MANDATORY",
+    "description": "Transaction Unique ID (Field 50) cannot be null.",
+    "duration_ms": 2166.2246779887937,
+    "error_count": 0,
+    "throughput_tps": 2178252
+  },
+  {
+    "rule_id": "F.25.2.1",
+    "category": "MANDATORY",
+    "description": "Class Name (Field 59) cannot be null.",
+    "duration_ms": 1686.1976550135296,
+    "error_count": 676290,
+    "throughput_tps": 2798357
+  },
+  {
+    "rule_id": "F.25.2.5",
+    "category": "MANDATORY",
+    "description": "Product Name (Field 63) cannot be null.",
+    "duration_ms": 1100.9960430092178,
+    "error_count": 0,
+    "throughput_tps": 4285741
+  },
+  {
+    "rule_id": "F.24.6",
+    "category": "ARITHMETIC",
+    "description": "Total Transaction Charge mismatch beyond 1% tolerance.",
+    "duration_ms": 973.3166569785681,
+    "error_count": 0,
+    "throughput_tps": 4847943
+  },
+  {
+    "rule_id": "F.17.2.2",
+    "category": "CONSISTENCY",
+    "description": "Invalid Rate Units for Energy product (cannot be $/MW).",
+    "duration_ms": 992.9411060002167,
+    "error_count": 0,
+    "throughput_tps": 4752128
+  },
+  {
+    "rule_id": "F.25.18",
+    "category": "CONSISTENCY",
+    "description": "Transaction Product Type mismatch.",
+    "duration_ms": 1083.4805580088869,
+    "error_count": 0,
+    "throughput_tps": 4355024
+  },
+  {
+    "rule_id": "F.24.3",
+    "category": "BOUNDS",
+    "description": "Transaction End Date must be greater than Begin Date.",
+    "duration_ms": 1146.244414994726,
+    "error_count": 1031,
+    "throughput_tps": 4116560
+  },
+  {
+    "rule_id": "F.24.4",
+    "category": "BOUNDS",
+    "description": "Transaction End Date missing.",
+    "duration_ms": 844.5477049972396,
+    "error_count": 0,
+    "throughput_tps": 5587113
+  },
+  {
+    "rule_id": "F.24.15.1",
+    "category": "DEDUP",
+    "description": "Duplicate Transaction Unique IDs detected.",
+    "duration_ms": 854.4702189974487,
+    "error_count": 0,
+    "throughput_tps": 5522233
+  }
+]

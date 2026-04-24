@@ -1,0 +1,218 @@
+[
+  {
+    "rule_id": "F.24.6",
+    "category": "ARITHMETIC",
+    "description": "Total Transaction Charge mismatch beyond 1% tolerance.",
+    "duration_ms": 79.58998900721781,
+    "error_count": 0,
+    "throughput_tps": 59286149
+  },
+  {
+    "rule_id": "F.24.3",
+    "category": "BOUNDS",
+    "description": "Transaction End Date must be greater than Begin Date.",
+    "duration_ms": 6.004900991683826,
+    "error_count": 1031,
+    "throughput_tps": 785788809
+  },
+  {
+    "rule_id": "F.24.15.1",
+    "category": "DEDUP",
+    "description": "Duplicate Transaction Unique IDs detected.",
+    "duration_ms": 1479.2208500148263,
+    "error_count": 0,
+    "throughput_tps": 3189911
+  },
+  {
+    "rule_id": "F.17.2.2",
+    "category": "CONSISTENCY",
+    "description": "Invalid Rate Units for Energy product (cannot be $/MW).",
+    "duration_ms": 179.83452501357533,
+    "error_count": 0,
+    "throughput_tps": 26238476
+  },
+  {
+    "rule_id": "F.25.18",
+    "category": "CONSISTENCY",
+    "description": "Transaction Product Type mismatch.",
+    "duration_ms": 129.55177601543255,
+    "error_count": 0,
+    "throughput_tps": 36422379
+  },
+  {
+    "rule_id": "F.24.1",
+    "category": "MANDATORY",
+    "description": "Transaction Unique ID (Field 50) is required.",
+    "duration_ms": 0.738567003281787,
+    "error_count": 0,
+    "throughput_tps": 6388836732
+  },
+  {
+    "rule_id": "F.25.2.1",
+    "category": "MANDATORY",
+    "description": "Class Name (Field 59) is required.",
+    "duration_ms": 7.4224800046067685,
+    "error_count": 676290,
+    "throughput_tps": 635715286
+  },
+  {
+    "rule_id": "F.25.2.2",
+    "category": "MANDATORY",
+    "description": "Term Name (Field 60) is required.",
+    "duration_ms": 0.7875060255173594,
+    "error_count": 0,
+    "throughput_tps": 5991806852
+  },
+  {
+    "rule_id": "F.25.2.3",
+    "category": "MANDATORY",
+    "description": "Increment Name (Field 61) is required.",
+    "duration_ms": 1.2664409878198057,
+    "error_count": 0,
+    "throughput_tps": 3725861722
+  },
+  {
+    "rule_id": "F.25.2.4",
+    "category": "MANDATORY",
+    "description": "Increment Peaking Name (Field 62) is required.",
+    "duration_ms": 2.771622996078804,
+    "error_count": 15693,
+    "throughput_tps": 1702462422
+  },
+  {
+    "rule_id": "F.25.2.5",
+    "category": "MANDATORY",
+    "description": "Product Name (Field 63) is required.",
+    "duration_ms": 1.1909650056622922,
+    "error_count": 0,
+    "throughput_tps": 3961983750
+  },
+  {
+    "rule_id": "F.25.2.6",
+    "category": "MANDATORY",
+    "description": "Rate Units (Field 66) is required.",
+    "duration_ms": 0.7175439968705177,
+    "error_count": 0,
+    "throughput_tps": 6576020453
+  },
+  {
+    "rule_id": "F.25.2.7",
+    "category": "MANDATORY",
+    "description": "Time Zone (Field 58) is required.",
+    "duration_ms": 0.8605610055383295,
+    "error_count": 0,
+    "throughput_tps": 5483148747
+  },
+  {
+    "rule_id": "F.25.2.8",
+    "category": "MANDATORY",
+    "description": "Point of Delivery Balancing Authority (Field 57) is required.",
+    "duration_ms": 0.6910530210006982,
+    "error_count": 0,
+    "throughput_tps": 6828107043
+  },
+  {
+    "rule_id": "F.25.19",
+    "category": "MANDATORY",
+    "description": "Trade Date is required after Q3 2013.",
+    "duration_ms": 1.014441018924117,
+    "error_count": 0,
+    "throughput_tps": 4651412858
+  },
+  {
+    "rule_id": "F.25.21",
+    "category": "MANDATORY",
+    "description": "Type of Rate is required after Q3 2013.",
+    "duration_ms": 0.8009440207388252,
+    "error_count": 0,
+    "throughput_tps": 5891278139
+  },
+  {
+    "rule_id": "F.30.48",
+    "category": "MANDATORY",
+    "description": "POD Specific Location is required.",
+    "duration_ms": 0.5382320086937398,
+    "error_count": 0,
+    "throughput_tps": 8766821600
+  },
+  {
+    "rule_id": "F.16.14.1",
+    "category": "MANDATORY",
+    "description": "Seller Company Name is required.",
+    "duration_ms": 0.5397129862103611,
+    "error_count": 0,
+    "throughput_tps": 8742765359
+  },
+  {
+    "rule_id": "F.25.2.6",
+    "category": "MANDATORY",
+    "description": "Rate Units is required.",
+    "duration_ms": 0.4354850098025054,
+    "error_count": 0,
+    "throughput_tps": 10835238627
+  },
+  {
+    "rule_id": "F.21.6",
+    "category": "MANDATORY",
+    "description": "FERC Tariff Reference is required.",
+    "duration_ms": 0.6215549947228283,
+    "error_count": 0,
+    "throughput_tps": 7591579248
+  },
+  {
+    "rule_id": "F.30.44",
+    "category": "CONDITIONAL",
+    "description": "Standardized Price required for ENERGY/CAPACITY/BOOKED OUT POWER.",
+    "duration_ms": 95.31179501209408,
+    "error_count": 0,
+    "throughput_tps": 49506821
+  },
+  {
+    "rule_id": "F.30.45",
+    "category": "CONDITIONAL",
+    "description": "Standardized Quantity required for ENERGY/CAPACITY/BOOKED OUT POWER.",
+    "duration_ms": 75.22518499172293,
+    "error_count": 0,
+    "throughput_tps": 62726120
+  },
+  {
+    "rule_id": "F.25.14.1",
+    "category": "CONDITIONAL",
+    "description": "Transaction Quantity is required.",
+    "duration_ms": 0.8178520074579865,
+    "error_count": 0,
+    "throughput_tps": 5769483912
+  },
+  {
+    "rule_id": "F.25.15",
+    "category": "CONDITIONAL",
+    "description": "Total Transaction Charge is required.",
+    "duration_ms": 0.4540630034171045,
+    "error_count": 0,
+    "throughput_tps": 10391914700
+  },
+  {
+    "rule_id": "F.25.21.2",
+    "category": "BOUNDS",
+    "description": "Transaction Quantity should be > 0.",
+    "duration_ms": 79.88376199500635,
+    "error_count": 1453045,
+    "throughput_tps": 59068124
+  },
+  {
+    "rule_id": "F.25.24",
+    "category": "BOUNDS",
+    "description": "Standardized Quantity should be > 0.",
+    "duration_ms": 95.34040102153085,
+    "error_count": 1453045,
+    "throughput_tps": 49491967
+  },
+  {
+    "rule_id": "F.25.20",
+    "category": "BOUNDS",
+    "description": "Standardized Price should be positive if charge is non-zero.",
+    "duration_ms": 7.376138994004577,
+    "error_count": 29106,
+    "throughput_tps": 639709203
+  }
+]

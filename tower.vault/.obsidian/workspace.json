@@ -1,0 +1,302 @@
+{
+  "main": {
+    "id": "3f686e9cc17790b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e459e485e484368b",
+        "type": "split",
+        "children": [
+          {
+            "id": "04313917addfedab",
+            "type": "split",
+            "dimension": 79.96201329534662,
+            "children": [
+              {
+                "id": "67bd5ab356ef3477",
+                "type": "tabs",
+                "dimension": 70.2988792029888,
+                "children": [
+                  {
+                    "id": "68dcd47cf1c214d3",
+                    "type": "leaf",
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "kanban/kanban_gen1_000104.md",
+                        "kanbanViewState": {
+                          "kanban-plugin": "board",
+                          "list-collapse": [
+                            true,
+                            true,
+                            true,
+                            true,
+                            false,
+                            null,
+                            null,
+                            null,
+                            false,
+                            null,
+                            null,
+                            true,
+                            true,
+                            true
+                          ]
+                        }
+                      },
+                      "icon": "lucide-trello",
+                      "title": "kanban_gen1_000104"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ca6cf44760f9e480",
+                "type": "tabs",
+                "dimension": 29.70112079701121,
+                "children": [
+                  {
+                    "id": "be25ccf524bdaf59",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Design UI UX for ingestion and validation features stage 1.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Design UI UX for ingestion and validation features stage 1"
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical"
+          },
+          {
+            "id": "65ddfd51c6db7b46",
+            "type": "tabs",
+            "dimension": 20.03798670465337,
+            "children": [
+              {
+                "id": "d6442ad32f6174c5",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower.vault",
+                      "focus": false,
+                      "profile": {
+                        "args": [],
+                        "executable": "/bin/sh",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "linux": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "Terminal: sh"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44ce1228b5bc0877",
+    "type": "split",
+    "children": [
+      {
+        "id": "05f6d145811c2890",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cc9d7e6febf1270",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "29216aa0629ad4c6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#mvp/arelle",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "71be203ba252244b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "e1ddfd7bcbbf2f8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe85d673ccc986b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "108371505767f8ab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "5f13cecff8b76f2c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "c42401b74df17895",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b27fda0820b52f6b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0eb708b17bf65dfe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false,
+      "terminal:Open terminal": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
+    }
+  },
+  "active": "68dcd47cf1c214d3",
+  "lastOpenFiles": [
+    "Design UI UX for ingestion and validation features stage 1.md",
+    "kanban/kanban_gen1_000104.md",
+    "Initialize React SPA with Tailwind in `apps frontend` stage 1.md",
+    "Welcome.md",
+    "base.base",
+    "Untitled.canvas",
+    "kanban",
+    "Untitled Kanban.md"
+  ]
+}

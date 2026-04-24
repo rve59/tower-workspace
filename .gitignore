@@ -1,0 +1,97 @@
+# TOWER Ecosystem: Standard Ignore Rules
+# Updated: 2026-04-23
+
+# --- OS Specific ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- VS Code Managed Project ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# --- Python Project (uv / venv / pip) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.installed.cfg
+.pip-wheel-metadata/
+
+# Testing & Coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.ruff_cache/
+
+# Type Checking
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# --- Node.js / Frontend Project ---
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build Outputs
+.next/
+out/
+.docusaurus/
+.cache/
+.parcel-cache/
+.turbo/
+
+# --- TOWER-K Specific Exclusions ---
+tower.docs/
+tower.docs
+tower_kernel/data/lake/
+tower_kernel/data/master/
+tower_kernel/data/logs/
+*.parquet
+*.log
+test_full_validation_integration.log
+
+# --- Environment & Secrets ---
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
