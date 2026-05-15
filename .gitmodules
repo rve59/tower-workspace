@@ -1,3 +1,18 @@
 [submodule "tower_kernel"]
 	path = tower_kernel
 	url = https://github.com/rve59/tower.kernel.git
+[submodule "tower_core"]
+	path = tower_core
+	url = https://github.com/rve59/tower.core.git
+[submodule "agent.libs/lib_market_agents"]
+	path = agent.libs/lib_market_agents
+	url = https://github.com/rve59/lib_market_agents.git
+[submodule "ferc.libs/lib_ferc_repos"]
+	path = ferc.libs/lib_ferc_repos
+	url = https://github.com/rve59/lib_ferc_repos.git
+[submodule "xbrl.libs/lib_xbrl"]
+	path = xbrl.libs/lib_xbrl
+	url = https://github.com/rve59/lib_xbrl.git
+[submodule "xbrl.libs/lib_xbrl_auditor"]
+	path = xbrl.libs/lib_xbrl_auditor
+	url = https://github.com/rve59/lib_xbrl_auditor.git

@@ -5,7 +5,7 @@ import time
 import subprocess
 import traceback
 from pathlib import Path
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, Optional
 import pyarrow.parquet as pq
 import inspect
 
@@ -146,7 +146,6 @@ def run_rule(rule: Dict[str, Any], context: Dict[str, Any]) -> Tuple[bool, int]:
             col = rule["meta_rule"]["col"]
             available_cols = target_ldf.collect_schema().names()
             if col not in available_cols:
-                # log(f"      [SKIP] Column '{col}' not present in table. Skipping {rule_id}.")
                 return True, 0
 
         # Execute based on source type
@@ -173,19 +172,47 @@ def run_rule(rule: Dict[str, Any], context: Dict[str, Any]) -> Tuple[bool, int]:
         # Rule finished
         log(f"      [OK] Rule executed successfully. {'No violations found.' if res.height == 0 else f'Found {res.height} proper errors.'}")
         
-        # AGENTIC ANALYSIS TRIGGER
-        if res.height > 5000:
-            log(f"      [AGENT] High volume detected! Triggering Audit Agent for {rule_id}...")
-            from tower_kernel.services.audit_agent import RegulatoryAuditorAgent
-            report = RegulatoryAuditorAgent.generate_mock_report(rule_id, res.height, metadata)
-            
-            # Save report
-            audit_dir = LOG_DIR.parent / "audits"
-            os.makedirs(audit_dir, exist_ok=True)
-            report_path = audit_dir / f"audit_{rule_id}.md"
-            with open(report_path, "w") as f:
-                f.write(report)
-            log(f"      [AGENT] Forensic report generated: {report_path.name}")
+        # FORENSIC BRIEF TRIGGER — offline compression only, NO Gemini call.
+        # Dual Threshold: Fires if violation rate >= 2.5% OR absolute count > 5,000.
+        # This captures both high-density systemic issues and high-volume mass failures.
+        _total_count = target_ldf.select(pl.len()).collect().item()
+        _violation_rate = res.height / _total_count if _total_count > 0 else 0.0
+
+        if _violation_rate >= 0.025 or res.height > 5000:
+            log(f"      [AGENT] Trigger threshold met ({_violation_rate:.1%} / {res.height:,} errors). Building forensic brief for {rule_id}...")
+            try:
+                from tower_kernel.services.audit_agent import RegulatoryAuditorAgent
+
+                rule_spec = {
+                    "rule_id": rule_id,
+                    "category": rule.get("category", "UNKNOWN"),
+                    "description": rule.get("desc", ""),
+                    "col": rule.get("meta_rule", {}).get("col") if source == "metadata" else None,
+                }
+
+                total_df = target_ldf.collect()
+
+                # Save under data/audit/<CID>/<YYYY-QQ>/<tier>/
+                brief = RegulatoryAuditorAgent.build_forensic_brief(
+                    rule_spec=rule_spec,
+                    error_df=res,
+                    total_df=total_df,
+                    cid=context["cid"],
+                    year=context["year"],
+                    quarter=context["quarter"],
+                    tier=context["tier"],
+                )
+                dest = RegulatoryAuditorAgent.resolve_audit_path(
+                    rule_id=rule_id,
+                    cid=context["cid"],
+                    year=context["year"],
+                    quarter=context["quarter"],
+                    tier=context["tier"],
+                )
+                log(f"      [AGENT] Forensic brief saved → {dest.relative_to(WORKSPACE_ROOT)}")
+                log(f"      [AGENT] Submit to Gemini via TOWER UI or submit_to_gemini() when ready.")
+            except Exception as agent_err:
+                log(f"      [AGENT] Warning: ForensicSummarizer failed ({agent_err}).")
             
         return True, res.height
     except Exception as e:
@@ -216,13 +243,26 @@ def main():
     meta = pq.read_metadata(TX_PATH).metadata
     metadata = {k.decode("utf-8"): v.decode("utf-8") if isinstance(v, bytes) else v for k, v in meta.items()} if meta else {}
 
+    # Derive audit placement context from the lake path
+    # Pattern: lake/<CID>/<YYYY-QQ>/<tier>/transactions.parquet
+    lake_parts = LAKE_BASE.parts
+    tier_name  = lake_parts[-1]           # e.g. "bronze"
+    period_str = lake_parts[-2]           # e.g. "2025-Q1"
+    cid_str    = lake_parts[-3]           # e.g. "C000171"
+    year_str, quarter_str = period_str.split("-")  # "2025", "Q1"
+
     context = {
         "ldf": ldf,
         "ident_ldf": ident_ldf,
         "contract_ldf": contract_ldf,
         "previous_ldf": previous_ldf,
         "registry_ldf": registry_ldf,
-        "metadata": metadata
+        "metadata": metadata,
+        # Audit placement
+        "cid": cid_str,
+        "year": year_str,
+        "quarter": quarter_str,
+        "tier": tier_name,
     }
 
     all_rules = get_all_rules()

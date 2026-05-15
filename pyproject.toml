@@ -9,6 +9,7 @@ dependencies = [
     "pyarrow>=23.0.1",
     "pydantic>=2.13.1",
     "python-multipart",
+    "requests",
 ]
 
 [tool.uv.workspace]
@@ -21,7 +22,8 @@ members = [
     "ferc.libs/lib_ferc_repos",
     "xbrl.libs/lib_xbrl",
     "xbrl.libs/lib_xbrl_auditor",
-    "tower_kernel"
+    "tower_kernel",
+    "ladybug.libs/lib_ldbg_tower_bridge"
 ]
 
 [dependency-groups]

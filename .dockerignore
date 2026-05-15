@@ -1,0 +1,15 @@
+.git
+.venv
+node_modules
+dist
+build
+*.lbug
+*.lbug_index
+tower_kernel/data/lake
+tower_kernel/data/infiltration
+tower_kernel/data/current_quarter
+tower_kernel/data/registry
+*.parquet
+*.csv
+*.zip
+.gemini

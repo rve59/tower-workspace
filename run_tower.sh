@@ -37,7 +37,7 @@ echo "[TOWER] Logs redirected to $LOG_DIR"
 # 3. Start API Hub (Port 9042)
 echo "[TOWER] Starting API Hub on port 9042..."
 # Use --package tower-api to ensure sub-package dependencies are available
-uv run --package tower-api python tower_core/apps/api/main.py > "$BACKEND_LOG" 2>&1 &
+TOWER_SERVICE=HUB uv run --package tower-api python tower_core/apps/api/main.py > "$BACKEND_LOG" 2>&1 &
 API_PID=$!
 
 # 4. Start Kernel Node (Port 9043)

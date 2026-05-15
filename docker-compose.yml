@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  tower-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "9042:9042"
+    environment:
+      - TOWER_SERVICE=HUB
+      - PYTHONPATH=/app/tower_core/apps/api:/app/tower_kernel/src:/app/ladybug.libs/lib_ldbg_tower_bridge/src
+    volumes:
+      - .:/app
+      - /app/.venv
+    restart: always
+
+  tower-kernel:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "9043:9043"
+    command: uv run --package tower-kernel python tower_kernel/apps/k_server/main.py
+    environment:
+      - PYTHONPATH=/app/tower_kernel/src:/app/ladybug.libs/lib_ldbg_tower_bridge/src
+    volumes:
+      - .:/app
+      - /app/.venv
+    restart: always
+
+  tower-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "9041:9041"
+    volumes:
+      - .:/app
+    restart: always
+
+  ladybug-explorer:
+    image: ghcr.io/ladybugdb/explorer:latest
+    ports:
+      - "9044:8000"
+    volumes:
+      - ./tower_kernel/data/lake:/database
+    environment:
+      - LBUG_FILE=sandbox.lbug
+    restart: always
+
+  ladybug-api:
+    image: ghcr.io/ladybugdb/api-server:latest
+    ports:
+      - "9045:8000"
+    volumes:
+      - ./tower_kernel/data/lake:/database
+    restart: always
