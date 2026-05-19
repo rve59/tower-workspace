@@ -1,0 +1,1776 @@
+{
+  "C000171": [
+    {
+      "code": "D.3.9",
+      "name": "Refer to the \u201cFiling Types\u201d Tab For requirements o...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.1",
+      "name": "For a filing with Filing.FilingType=New, all Contr...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.2",
+      "name": "For a filing with Filing.FilingType=Replace, all C...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.3",
+      "name": "For a filing with Filing.FilingType=Delete, Contra...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.4",
+      "name": "For a filing with Filing.FilingType=Merge, Contrac...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.5",
+      "name": "For a Contract Data file with Contract.FilingType=...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.6",
+      "name": "For a Contract Data file with Contract.FilingType=...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.7",
+      "name": "For a Contract with Contract.FilingType=Replace, t...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.8",
+      "name": "For a Contract with Contract.FilingType=Delete, Tr...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.9",
+      "name": "Disallow XML delete option for external users",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.12",
+      "name": "The order of organizations in XML must be sequenti...",
+      "result": "Passed"
+    },
+    {
+      "code": "Data Check",
+      "name": "Validates business rules",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.1",
+      "name": "The validations which result in a type: \u201cError\u201d wi...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3",
+      "name": "A filing must have at least two rows of contact da...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.1",
+      "name": "The Company Name (Field 2) shall be checked agains...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.2",
+      "name": "The Seller Company Name (Field 16) shall be checke...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.4",
+      "name": "The Organization Company Name (Field 2) for the se...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.5",
+      "name": "The Seller Company Name (Field 16) shall be checke...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.4.1",
+      "name": "The system shall check for the existence of duplic...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.4.2",
+      "name": "Filer Unique Identifier is required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.5",
+      "name": "The system shall check for the existence of duplic...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.6",
+      "name": "The system shall check for the existence of duplic...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.7",
+      "name": "The system shall not check for duplicate contacts....",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.8",
+      "name": "Contact Email format must be valid",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.10",
+      "name": "A filing shall contain zero or more Contracts.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.11",
+      "name": "Contract Mandatory Fields",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.12.1",
+      "name": "A filing shall contain only one ID Data contact re...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.12.2",
+      "name": "A filing shall contain only one ID Data contact re...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.13",
+      "name": "ID Data Mandatory Fields",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.13.1",
+      "name": "The Contact Name (Field 4) for the designated Agen...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.1",
+      "name": "A filing shall contain one Seller as indicated by ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.2",
+      "name": "A Seller shall contain one Contact included in the...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.4",
+      "name": "A Seller shall contain one or more eRegistered Con...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.5",
+      "name": "The Contact Name (Field 4) for the Seller contact ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.15",
+      "name": "The seller contact records shall be checked for co...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.16.3",
+      "name": "ID Data (Fields 1-14) shall contain one or more eR...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.17",
+      "name": "A contact person is not required for a buyer; howe...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.18",
+      "name": "If the FilingType of the Filing is \"New\" then all ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.19",
+      "name": "If the FilingType of the Filing is \"Replace\" then ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.1",
+      "name": "If the FilingType of the Filing is \"Delete\" there ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.2",
+      "name": "If the FilingType of the Filing is \u201cDelete\u201d there ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.3",
+      "name": "If the FilingType of the Filing is \u201cDelete\u201d, there...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.4",
+      "name": "If the FilingType of the Filing is \u201cDelete\u201d, there...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.21",
+      "name": "Transaction Mandatory Fields",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.23.1",
+      "name": "A filing must contain Companies playing a minimum ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.23.2",
+      "name": "If an Organization is a Seller or FilerAgent, it m...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.25",
+      "name": "No duplicate Uids across a filing for Organization...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.26",
+      "name": "CIDs must be valid and active for the filing perio...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.1",
+      "name": "If the Organization.TransactionsReported ToIndexPr...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.2",
+      "name": "If for an organization, Organization.TransactionsR...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.3",
+      "name": "If the Organization has Index Publisher(s) then th...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.4",
+      "name": "If there are one or more Index Publishers (Field 7...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.5",
+      "name": "If a filing is followed by one or more append fili...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.28",
+      "name": "For each Index Publisher listed there must be info...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.1",
+      "name": "Contract (Product) data validation Check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.1.1",
+      "name": "Contract (Product) data validation Check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.1.2",
+      "name": "Contract (Product) data validation Check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.2.1",
+      "name": "Transaction data validation check: If Product Name...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.2.2",
+      "name": "Energy Rate Units Check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.3.1",
+      "name": "Contract (Product) data validation check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.3.2",
+      "name": "Contract (Product) data validation check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.4.1",
+      "name": "Transaction data validation check: If Product Name...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.4.2",
+      "name": "Capacity Rate Units Check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.5",
+      "name": "Only Agent contacts listed are allowed to submit f...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.8.1",
+      "name": "Price exceeds $1,000 threshold warning",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.8.2",
+      "name": "\u201cTransaction data validation check: If Rate Units ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.8.3",
+      "name": "\u201cTransaction data validation check: If Rate Units ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.18.1.1",
+      "name": "The filing range shall be from 2002 to present - C...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.18.1.2",
+      "name": "The filing range shall be up to present - Check fi...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.18.2",
+      "name": "Submission validation check: The system shall not ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.1",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.2",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.3",
+      "name": "The system shall validate state code length for US...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.4",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.5",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.6",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.7",
+      "name": "The system shall validate the Address - Check that...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.1.1",
+      "name": "Seller Uid is blank.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.2.2",
+      "name": "The system shall reject an execution date that is ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.3",
+      "name": "Execution Date must be after Jan 1, 1900",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.4.2",
+      "name": "If CommencementDate is empty or null then \u201cError: ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.5",
+      "name": "If commencement date <= 1/1/1900 then \u201cError: The ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.7",
+      "name": "If Termination Date <= 1/1/1900 then \u201cError: The T...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.8",
+      "name": "ActualEnd date should be populated only if the end...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.9",
+      "name": "ActualEnd <= 1/1/1900",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.11",
+      "name": "There are multiple buyers assigned to one contract...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.19",
+      "name": "If Seller is not registered with eTariff, then \"Er...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.20",
+      "name": "If Seller is registered with eTariff but tariff ex...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.21",
+      "name": "If Seller is registered with eTariff but tariff no...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.22",
+      "name": "Please confirm that you have entered the name of t...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.23",
+      "name": "Duplicate Contract Unique Identifier (Field 15).",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.2.1",
+      "name": "Each contract must be linked to a valid Seller.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.2.2",
+      "name": "Check Seller CID for validity.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.3.1",
+      "name": "Customer Company Name (Field 17) must be a valid c...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.3.2",
+      "name": "Customer Company Name (Field 17) is empty",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.3.3",
+      "name": "Check Buyer CID for validity.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.5",
+      "name": "Contract Affiliate must be Y or N",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.6",
+      "name": "FERC Tariff Reference is required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.7",
+      "name": "If ContractServiceAgreement is empty or null then ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.12",
+      "name": "If extension provision description is null or empt...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.15",
+      "name": "ActualEnd > End of Period",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.22",
+      "name": "Buyer name > 70 characters.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.31",
+      "name": "The Four Fields that create a distinct contract mu...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.32",
+      "name": "The maximum number of Contracts in a filing is 30,...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.2.2",
+      "name": "Empty or null Transaction Begin Date (Field 43)",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.3",
+      "name": "Disallow Begin Date <= Jan 1, 1900. Error message:...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.4.2",
+      "name": "Do not allow empty or null End Date. (Field 44)",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.5",
+      "name": "Disallow EndDate <= Jan 1, 1900. Error message:",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.1",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.2",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.3",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.4",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.5",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.6",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.2",
+      "name": "Allow empty or null Units (Field 33).",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.3",
+      "name": "If unit is not found in units lookup then must mat...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.4",
+      "name": "Allow empty or null rate units.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.5",
+      "name": "Rate Units recognized lookup check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.6",
+      "name": "ProductType = \u201cCR\u201d then the valid product names ar...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.7",
+      "name": "Allow null or empty PORBA but disallow unknown val...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.8",
+      "name": "If PORBA = \u201cHUB\u201d then allow only known values for ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.9",
+      "name": "Balancing Authority recognized lookup check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.10",
+      "name": "If PODBA = \u201cHUB\u201d then allow only known values for ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.21.2",
+      "name": "Confirm Contract Actual Termination Date >= Transa...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.22",
+      "name": "If PODBA is anything but Hub, then you can type fr...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.23",
+      "name": "In XML the PODSL and PODSLHub cannot be populated ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.24",
+      "name": "Verify that at least one of the four rate fields i...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.1",
+      "name": "Transaction Unique ID required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.3",
+      "name": "Temporal Sequence (Transaction End Date)",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.4",
+      "name": "Confirm EndDate <= Period End Date and EndDate is ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.5",
+      "name": "Confirm StartDate >= Period Start Date and StartDa...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.6",
+      "name": "Financial Integrity (Price * Quantity)",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.15.1",
+      "name": "Uniqueness: Transaction Unique Identifier",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.1",
+      "name": "Disallow empty or null transaction UIDs.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2",
+      "name": "Check that required fields are populated correctly...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.1",
+      "name": "Transaction Class Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.2",
+      "name": "Transaction Term Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.3",
+      "name": "Transaction Increment Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.4",
+      "name": "Transaction Increment Peaking Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.5",
+      "name": "Transaction Product Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.6",
+      "name": "Transaction Rate Units required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.7",
+      "name": "Transaction Time Zone required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.8",
+      "name": "Transaction Point of Delivery Balancing Authority required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.3",
+      "name": "If PODBA = \u201cHUB\u201d and PODSL-Hub is not found in the...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.13.2",
+      "name": "Confirm if Transaction is BookedOutPower and if bu...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.14.1",
+      "name": "Transaction quantity is required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.15",
+      "name": "Sales cannot have both Quantity and Charge equal to 0",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.16",
+      "name": "Rule Name: Aggregate ISO Sales Detected Validation...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.17.2",
+      "name": "Check for transaction records with duplicate data ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.18",
+      "name": "Product Authorization Mismatch",
+      "result": "Failed (274867 violations)"
+    },
+    {
+      "code": "F.25.19",
+      "name": "Trade Date (Field 53) should not be null after Q3 ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.20",
+      "name": "Transaction Standardized Price is required after Q...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.21",
+      "name": "Transaction Type of Rate is required after Q3 2013...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.21.2",
+      "name": "Warning for non-positive Transaction quantity",
+      "result": "Failed (152155 violations)"
+    },
+    {
+      "code": "F.25.24",
+      "name": "Transaction Standardized Quantity is required afte...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.25",
+      "name": "In XML the PODSL and PODSLHub cannot be populated ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41",
+      "name": "Valid Seller without a Tariff with FERC will use \u201c...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41.1",
+      "name": "The system will Verify that Seller who entered \u201cNP...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41.2",
+      "name": "The system shall generate a WARNING when the Tarif...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41.3",
+      "name": "The system shall verify that all contracts belongi...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.42",
+      "name": "Trade Date is required for transactions entered in...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.43",
+      "name": "Transaction Type of Rate is required for transacti...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.44",
+      "name": "Standardized Price required for ENERGY, CAPACITY, BOOKED OUT POWER",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.45",
+      "name": "Standardized Quantity required for ENERGY, CAPACITY, BOOKED OUT POWER",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.46",
+      "name": "Rate Units must be equal to the Standardized Units...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.47",
+      "name": "Rate Units must be equal to the Standardized Units...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.48",
+      "name": "Transaction Point of Delivery Specific Location (P...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.31.01",
+      "name": "Any Seller for a given company must be either an A...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.31.02",
+      "name": "There should be only one Agent Contact per filing ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.TYPE_PRICE",
+      "name": "Data Type: Price must be numeric",
+      "result": "Passed"
+    },
+    {
+      "code": "F.UNIQUE_TX",
+      "name": "Uniqueness: Transaction Unique Identifier",
+      "result": "Passed"
+    },
+    {
+      "code": "Q1 2020",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "Q2 2020",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "Q3 2013",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "Q4 2019",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "XSD",
+      "name": "Validates data types, relationships and constraint...",
+      "result": "Passed"
+    }
+  ],
+  "C000041": [
+    {
+      "code": "D.3.9",
+      "name": "Refer to the \u201cFiling Types\u201d Tab For requirements o...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.1",
+      "name": "For a filing with Filing.FilingType=New, all Contr...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.2",
+      "name": "For a filing with Filing.FilingType=Replace, all C...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.3",
+      "name": "For a filing with Filing.FilingType=Delete, Contra...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.4",
+      "name": "For a filing with Filing.FilingType=Merge, Contrac...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.5",
+      "name": "For a Contract Data file with Contract.FilingType=...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.6",
+      "name": "For a Contract Data file with Contract.FilingType=...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.7",
+      "name": "For a Contract with Contract.FilingType=Replace, t...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.8",
+      "name": "For a Contract with Contract.FilingType=Delete, Tr...",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.9",
+      "name": "Disallow XML delete option for external users",
+      "result": "Passed"
+    },
+    {
+      "code": "D.3.9.12",
+      "name": "The order of organizations in XML must be sequenti...",
+      "result": "Passed"
+    },
+    {
+      "code": "Data Check",
+      "name": "Validates business rules",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.1",
+      "name": "The validations which result in a type: \u201cError\u201d wi...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3",
+      "name": "A filing must have at least two rows of contact da...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.1",
+      "name": "The Company Name (Field 2) shall be checked agains...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.2",
+      "name": "The Seller Company Name (Field 16) shall be checke...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.4",
+      "name": "The Organization Company Name (Field 2) for the se...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.3.5",
+      "name": "The Seller Company Name (Field 16) shall be checke...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.4.1",
+      "name": "The system shall check for the existence of duplic...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.4.2",
+      "name": "Filer Unique Identifier is required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.5",
+      "name": "The system shall check for the existence of duplic...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.6",
+      "name": "The system shall check for the existence of duplic...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.7",
+      "name": "The system shall not check for duplicate contacts....",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.8",
+      "name": "Contact Email format must be valid",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.10",
+      "name": "A filing shall contain zero or more Contracts.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.11",
+      "name": "Contract Mandatory Fields",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.12.1",
+      "name": "A filing shall contain only one ID Data contact re...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.12.2",
+      "name": "A filing shall contain only one ID Data contact re...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.13",
+      "name": "ID Data Mandatory Fields",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.13.1",
+      "name": "The Contact Name (Field 4) for the designated Agen...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.1",
+      "name": "A filing shall contain one Seller as indicated by ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.2",
+      "name": "A Seller shall contain one Contact included in the...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.4",
+      "name": "A Seller shall contain one or more eRegistered Con...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.14.5",
+      "name": "The Contact Name (Field 4) for the Seller contact ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.15",
+      "name": "The seller contact records shall be checked for co...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.16.3",
+      "name": "ID Data (Fields 1-14) shall contain one or more eR...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.17",
+      "name": "A contact person is not required for a buyer; howe...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.18",
+      "name": "If the FilingType of the Filing is \"New\" then all ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.19",
+      "name": "If the FilingType of the Filing is \"Replace\" then ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.1",
+      "name": "If the FilingType of the Filing is \"Delete\" there ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.2",
+      "name": "If the FilingType of the Filing is \u201cDelete\u201d there ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.3",
+      "name": "If the FilingType of the Filing is \u201cDelete\u201d, there...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.20.4",
+      "name": "If the FilingType of the Filing is \u201cDelete\u201d, there...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.21",
+      "name": "Transaction Mandatory Fields",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.23.1",
+      "name": "A filing must contain Companies playing a minimum ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.23.2",
+      "name": "If an Organization is a Seller or FilerAgent, it m...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.25",
+      "name": "No duplicate Uids across a filing for Organization...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.26",
+      "name": "CIDs must be valid and active for the filing perio...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.1",
+      "name": "If the Organization.TransactionsReported ToIndexPr...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.2",
+      "name": "If for an organization, Organization.TransactionsR...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.3",
+      "name": "If the Organization has Index Publisher(s) then th...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.4",
+      "name": "If there are one or more Index Publishers (Field 7...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.27.5",
+      "name": "If a filing is followed by one or more append fili...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.16.28",
+      "name": "For each Index Publisher listed there must be info...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.1",
+      "name": "Contract (Product) data validation Check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.1.1",
+      "name": "Contract (Product) data validation Check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.1.2",
+      "name": "Contract (Product) data validation Check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.2.1",
+      "name": "Transaction data validation check: If Product Name...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.2.2",
+      "name": "Energy Rate Units Check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.3.1",
+      "name": "Contract (Product) data validation check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.3.2",
+      "name": "Contract (Product) data validation check: If Produ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.4.1",
+      "name": "Transaction data validation check: If Product Name...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.4.2",
+      "name": "Capacity Rate Units Check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.5",
+      "name": "Only Agent contacts listed are allowed to submit f...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.8.1",
+      "name": "Price exceeds $1,000 threshold warning",
+      "result": "Failed (2008 violations)"
+    },
+    {
+      "code": "F.17.8.2",
+      "name": "\u201cTransaction data validation check: If Rate Units ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.17.8.3",
+      "name": "\u201cTransaction data validation check: If Rate Units ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.18.1.1",
+      "name": "The filing range shall be from 2002 to present - C...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.18.1.2",
+      "name": "The filing range shall be up to present - Check fi...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.18.2",
+      "name": "Submission validation check: The system shall not ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.1",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.2",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.3",
+      "name": "The system shall validate state code length for US...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.4",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.5",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.6",
+      "name": "The system shall validate zip codes, with sensitiv...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.19.1.7",
+      "name": "The system shall validate the Address - Check that...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.1.1",
+      "name": "Seller Uid is blank.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.2.2",
+      "name": "The system shall reject an execution date that is ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.3",
+      "name": "Execution Date must be after Jan 1, 1900",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.4.2",
+      "name": "If CommencementDate is empty or null then \u201cError: ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.5",
+      "name": "If commencement date <= 1/1/1900 then \u201cError: The ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.7",
+      "name": "If Termination Date <= 1/1/1900 then \u201cError: The T...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.8",
+      "name": "ActualEnd date should be populated only if the end...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.9",
+      "name": "ActualEnd <= 1/1/1900",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.11",
+      "name": "There are multiple buyers assigned to one contract...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.19",
+      "name": "If Seller is not registered with eTariff, then \"Er...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.20",
+      "name": "If Seller is registered with eTariff but tariff ex...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.21",
+      "name": "If Seller is registered with eTariff but tariff no...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.22",
+      "name": "Please confirm that you have entered the name of t...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.20.23",
+      "name": "Duplicate Contract Unique Identifier (Field 15).",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.2.1",
+      "name": "Each contract must be linked to a valid Seller.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.2.2",
+      "name": "Check Seller CID for validity.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.3.1",
+      "name": "Customer Company Name (Field 17) must be a valid c...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.3.2",
+      "name": "Customer Company Name (Field 17) is empty",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.3.3",
+      "name": "Check Buyer CID for validity.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.5",
+      "name": "Contract Affiliate must be Y or N",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.6",
+      "name": "FERC Tariff Reference is required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.7",
+      "name": "If ContractServiceAgreement is empty or null then ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.12",
+      "name": "If extension provision description is null or empt...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.15",
+      "name": "ActualEnd > End of Period",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.22",
+      "name": "Buyer name > 70 characters.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.31",
+      "name": "The Four Fields that create a distinct contract mu...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.21.32",
+      "name": "The maximum number of Contracts in a filing is 30,...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.2.2",
+      "name": "Empty or null Transaction Begin Date (Field 43)",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.3",
+      "name": "Disallow Begin Date <= Jan 1, 1900. Error message:...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.4.2",
+      "name": "Do not allow empty or null End Date. (Field 44)",
+      "result": "Passed"
+    },
+    {
+      "code": "F.22.5",
+      "name": "Disallow EndDate <= Jan 1, 1900. Error message:",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.1",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.2",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.3",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.4",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.5",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.1.6",
+      "name": "Use the following pattern for the properties below...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.2",
+      "name": "Allow empty or null Units (Field 33).",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.3",
+      "name": "If unit is not found in units lookup then must mat...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.4",
+      "name": "Allow empty or null rate units.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.5",
+      "name": "Rate Units recognized lookup check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.6",
+      "name": "ProductType = \u201cCR\u201d then the valid product names ar...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.7",
+      "name": "Allow null or empty PORBA but disallow unknown val...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.8",
+      "name": "If PORBA = \u201cHUB\u201d then allow only known values for ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.9",
+      "name": "Balancing Authority recognized lookup check",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.10",
+      "name": "If PODBA = \u201cHUB\u201d then allow only known values for ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.21.2",
+      "name": "Confirm Contract Actual Termination Date >= Transa...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.22",
+      "name": "If PODBA is anything but Hub, then you can type fr...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.23",
+      "name": "In XML the PODSL and PODSLHub cannot be populated ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.23.24",
+      "name": "Verify that at least one of the four rate fields i...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.1",
+      "name": "Transaction Unique ID required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.3",
+      "name": "Temporal Sequence (Transaction End Date)",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.4",
+      "name": "Confirm EndDate <= Period End Date and EndDate is ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.5",
+      "name": "Confirm StartDate >= Period Start Date and StartDa...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.24.6",
+      "name": "Financial Integrity (Price * Quantity)",
+      "result": "Failed (43 violations)"
+    },
+    {
+      "code": "F.24.15.1",
+      "name": "Uniqueness: Transaction Unique Identifier",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.1",
+      "name": "Disallow empty or null transaction UIDs.",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2",
+      "name": "Check that required fields are populated correctly...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.1",
+      "name": "Transaction Class Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.2",
+      "name": "Transaction Term Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.3",
+      "name": "Transaction Increment Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.4",
+      "name": "Transaction Increment Peaking Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.5",
+      "name": "Transaction Product Name required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.6",
+      "name": "Transaction Rate Units required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.7",
+      "name": "Transaction Time Zone required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.2.8",
+      "name": "Transaction Point of Delivery Balancing Authority required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.3",
+      "name": "If PODBA = \u201cHUB\u201d and PODSL-Hub is not found in the...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.13.2",
+      "name": "Confirm if Transaction is BookedOutPower and if bu...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.14.1",
+      "name": "Transaction quantity is required",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.15",
+      "name": "Sales cannot have both Quantity and Charge equal to 0",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.16",
+      "name": "Rule Name: Aggregate ISO Sales Detected Validation...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.17.2",
+      "name": "Check for transaction records with duplicate data ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.18",
+      "name": "Product Authorization Mismatch",
+      "result": "Failed (4505875 violations)"
+    },
+    {
+      "code": "F.25.19",
+      "name": "Trade Date (Field 53) should not be null after Q3 ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.20",
+      "name": "Transaction Standardized Price is required after Q...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.21",
+      "name": "Transaction Type of Rate is required after Q3 2013...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.21.2",
+      "name": "Warning for non-positive Transaction quantity",
+      "result": "Failed (9744 violations)"
+    },
+    {
+      "code": "F.25.24",
+      "name": "Transaction Standardized Quantity is required afte...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.25.25",
+      "name": "In XML the PODSL and PODSLHub cannot be populated ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41",
+      "name": "Valid Seller without a Tariff with FERC will use \u201c...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41.1",
+      "name": "The system will Verify that Seller who entered \u201cNP...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41.2",
+      "name": "The system shall generate a WARNING when the Tarif...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.41.3",
+      "name": "The system shall verify that all contracts belongi...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.42",
+      "name": "Trade Date is required for transactions entered in...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.43",
+      "name": "Transaction Type of Rate is required for transacti...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.44",
+      "name": "Standardized Price required for ENERGY, CAPACITY, BOOKED OUT POWER",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.45",
+      "name": "Standardized Quantity required for ENERGY, CAPACITY, BOOKED OUT POWER",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.46",
+      "name": "Rate Units must be equal to the Standardized Units...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.47",
+      "name": "Rate Units must be equal to the Standardized Units...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.30.48",
+      "name": "Transaction Point of Delivery Specific Location (P...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.31.01",
+      "name": "Any Seller for a given company must be either an A...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.31.02",
+      "name": "There should be only one Agent Contact per filing ...",
+      "result": "Passed"
+    },
+    {
+      "code": "F.TYPE_PRICE",
+      "name": "Data Type: Price must be numeric",
+      "result": "Passed"
+    },
+    {
+      "code": "F.UNIQUE_TX",
+      "name": "Uniqueness: Transaction Unique Identifier",
+      "result": "Passed"
+    },
+    {
+      "code": "Q1 2020",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "Q2 2020",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "Q3 2013",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "Q4 2019",
+      "name": "\u201cYes\u201d in this column indicates that the requiremen...",
+      "result": "Passed"
+    },
+    {
+      "code": "XSD",
+      "name": "Validates data types, relationships and constraint...",
+      "result": "Passed"
+    }
+  ]
+}

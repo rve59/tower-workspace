@@ -8,71 +8,25 @@
         "type": "split",
         "children": [
           {
-            "id": "04313917addfedab",
-            "type": "split",
+            "id": "ca6cf44760f9e480",
+            "type": "tabs",
             "dimension": 79.96201329534662,
             "children": [
               {
-                "id": "67bd5ab356ef3477",
-                "type": "tabs",
-                "dimension": 70.29887920298879,
-                "children": [
-                  {
-                    "id": "68dcd47cf1c214d3",
-                    "type": "leaf",
-                    "state": {
-                      "type": "kanban",
-                      "state": {
-                        "file": "kanban/kanban_gen1_000104.md",
-                        "kanbanViewState": {
-                          "kanban-plugin": "board",
-                          "list-collapse": [
-                            true,
-                            true,
-                            true,
-                            true,
-                            false,
-                            null,
-                            null,
-                            null,
-                            false,
-                            null,
-                            null,
-                            true,
-                            true,
-                            true
-                          ]
-                        }
-                      },
-                      "icon": "lucide-trello",
-                      "title": "kanban_gen1_000104"
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "ca6cf44760f9e480",
-                "type": "tabs",
-                "dimension": 29.701120797011207,
-                "children": [
-                  {
-                    "id": "be25ccf524bdaf59",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Design UI UX for ingestion and validation features stage 1.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "Design UI UX for ingestion and validation features stage 1"
-                    }
-                  }
-                ]
+                "id": "be25ccf524bdaf59",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Design UI UX for ingestion and validation features stage 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Design UI UX for ingestion and validation features stage 1"
+                }
               }
-            ],
-            "direction": "vertical"
+            ]
           },
           {
             "id": "65ddfd51c6db7b46",
@@ -154,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#mvp/arelle",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -175,8 +129,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -288,10 +241,10 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "68dcd47cf1c214d3",
+  "active": "be25ccf524bdaf59",
   "lastOpenFiles": [
-    "Design UI UX for ingestion and validation features stage 1.md",
     "kanban/kanban_gen1_000104.md",
+    "Design UI UX for ingestion and validation features stage 1.md",
     "Initialize React SPA with Tailwind in `apps frontend` stage 1.md",
     "Welcome.md",
     "base.base",
