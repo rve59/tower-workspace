@@ -78,9 +78,9 @@ out/
 # --- TOWER-K Specific Exclusions ---
 tower.docs/
 tower.docs
-tower_kernel/data/lake/
-tower_kernel/data/master/
-tower_kernel/data/logs/
+tower_kernel/data/
+data/
+**/data/
 *.parquet
 *.log
 test_full_validation_integration.log
