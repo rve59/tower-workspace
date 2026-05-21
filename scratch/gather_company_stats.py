@@ -2,8 +2,8 @@ import polars as pl
 from pathlib import Path
 import os
 
-INDEX_PATH = Path("tower_kernel/data/master/registry/discovery_index.parquet")
-LAKE_ROOT = Path("tower_kernel/data/lake")
+INDEX_PATH = Path(f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/master/registry/discovery_index.parquet")
+LAKE_ROOT = Path(f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake")
 
 COMPANIES = [
     "Avista", "Puget Sound Energy", "PacifiCorp", "Cascade Natural Gas",

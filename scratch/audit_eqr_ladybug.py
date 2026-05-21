@@ -16,7 +16,7 @@ REGISTRY_PATH = "/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORK
 def run_forensic_audit(cid, period):
     # 1. Paths Construction
     # period format: 2025-Q1
-    host_lake_path = f"/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/data/lake/{cid}/{period}/bronze/"
+    host_lake_path = f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake/{cid}/{period}/bronze/"
     container_lake_path = f"/database/{cid}/{period}/bronze/"
     
     print(f"--- TOWER FORENSIC ENGINE ---")
@@ -140,7 +140,7 @@ def run_forensic_audit(cid, period):
     print(summary_text)
 
     # Generate the Markdown Report File
-    REPORT_DIR = "/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/data/reports"
+    REPORT_DIR = f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/reports"
     os.makedirs(REPORT_DIR, exist_ok=True)
     report_filename = f"audit_report_{cid}_{period}.md"
     report_file = os.path.join(REPORT_DIR, report_filename)

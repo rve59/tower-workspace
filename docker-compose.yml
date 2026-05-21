@@ -10,9 +10,11 @@ services:
     environment:
       - TOWER_SERVICE=HUB
       - PYTHONPATH=/app/tower_core/apps/api:/app/tower_kernel/src:/app/ladybug.libs/lib_ldbg_tower_bridge/src
+      - TOWER_DATA_ROOT=/data
     volumes:
       - .:/app
       - /app/.venv
+      - ${TOWER_DATA_ROOT}:/data
     restart: always
 
   tower-kernel:
@@ -24,9 +26,11 @@ services:
     command: uv run --package tower-kernel python tower_kernel/apps/k_server/main.py
     environment:
       - PYTHONPATH=/app/tower_kernel/src:/app/ladybug.libs/lib_ldbg_tower_bridge/src
+      - TOWER_DATA_ROOT=/data
     volumes:
       - .:/app
       - /app/.venv
+      - ${TOWER_DATA_ROOT}:/data
     restart: always
 
   tower-ui:
@@ -44,7 +48,7 @@ services:
     ports:
       - "9044:8000"
     volumes:
-      - ./tower_kernel/data/lake:/database
+      - ${TOWER_DATA_ROOT}/lake:/database
     environment:
       - LBUG_FILE=sandbox.lbug
     restart: always
@@ -54,5 +58,6 @@ services:
     ports:
       - "9045:8000"
     volumes:
-      - ./tower_kernel/data/lake:/database
+      - ${TOWER_DATA_ROOT}/lake:/database
     restart: always
+

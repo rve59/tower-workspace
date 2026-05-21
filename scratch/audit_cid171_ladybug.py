@@ -10,7 +10,7 @@ sys.path.append(BRIDGE_PATH)
 from lib_ldbg_tower_bridge.bridge import LadybugTowerBridge
 
 # Real Data Path
-LAKE_PATH = "/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/data/lake/C000171/2025-Q1/bronze/"
+LAKE_PATH = f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake/C000171/2025-Q1/bronze/"
 REGISTRY_PATH = "/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/src/tower_kernel/rules/eqr_rules_registry.json"
 
 def execute_ladybug_audit():
@@ -70,7 +70,7 @@ def execute_ladybug_audit():
     print(summary_text)
 
     # Generate the Markdown Report File
-    REPORT_DIR = "/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/data/reports"
+    REPORT_DIR = f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/reports"
     os.makedirs(REPORT_DIR, exist_ok=True)
     report_file = os.path.join(REPORT_DIR, "audit_report_CID171_2025Q1.md")
 

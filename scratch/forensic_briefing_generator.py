@@ -87,7 +87,7 @@ def generate_cid171_briefing():
     print("Requesting Expert Analysis from Gemini...")
     agent = RegulatoryAuditorAgent()
     
-    REPORT_PATH = Path(WORKSPACE_ROOT) / "tower_kernel/data/reports/forensic_brief_C000171_2025Q1.md"
+    REPORT_PATH = Path(WORKSPACE_ROOT) / f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/reports/forensic_brief_C000171_2025Q1.md"
     
     try:
         report_md = agent.submit_to_gemini(brief, save_to=REPORT_PATH)

@@ -22,7 +22,7 @@ def run_zero_copy_audit(cid, period):
     print(f"Strategy: Polars Transpilation (Pillar-to-Pillar)")
 
     # 1. Setup Pillars (Lazy Scanning)
-    lake_path = Path(WORKSPACE_ROOT) / f"tower_kernel/data/lake/{cid}/{period}/bronze"
+    lake_path = Path(WORKSPACE_ROOT) / f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake/{cid}/{period}/bronze"
     
     pillars = {
         "Transactions": pl.scan_parquet(lake_path / "transactions.parquet"),
@@ -108,7 +108,7 @@ def run_zero_copy_audit(cid, period):
     print("="*70)
 
     # Generate Markdown Report
-    REPORT_DIR = Path(WORKSPACE_ROOT) / "tower_kernel/data/reports"
+    REPORT_DIR = Path(WORKSPACE_ROOT) / f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/reports"
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     report_file = REPORT_DIR / f"audit_report_ZERO_COPY_{cid}_{period}.md"
     

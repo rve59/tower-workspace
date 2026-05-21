@@ -9,7 +9,7 @@ from tower_kernel.utils.logging import log_progress
 def log_info(msg):
     log_progress(msg, "INFO")
 
-BASE_PATH = "/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/data/lake/C000171/2025-Q1/bronze/"
+BASE_PATH = f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake/C000171/2025-Q1/bronze/"
 IDENT_PATH = os.path.join(BASE_PATH, "ident.parquet")
 CONTRACT_PATH = os.path.join(BASE_PATH, "contracts.parquet")
 TRANS_PATH = os.path.join(BASE_PATH, "transactions.parquet")

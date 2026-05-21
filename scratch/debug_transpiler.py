@@ -1,10 +1,11 @@
+import os
 import polars as pl
 from tower_kernel.rules.transpiler import CypherTranspiler, RelationalContext
 import json
 
 def debug_transpilation():
-    t_path = "tower_kernel/data/lake/C000041/2025-Q1/silver/transactions.parquet"
-    c_path = "tower_kernel/data/lake/C000041/2025-Q1/silver/contracts.parquet"
+    t_path = f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake/C000041/2025-Q1/silver/transactions.parquet"
+    c_path = f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake/C000041/2025-Q1/silver/contracts.parquet"
     
     t_ldf = pl.scan_parquet(t_path)
     c_ldf = pl.scan_parquet(c_path)

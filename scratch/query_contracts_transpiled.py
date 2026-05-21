@@ -1,9 +1,10 @@
+import os
 import polars as pl
 from pathlib import Path
 
 def query_authorized_products():
     # 1. Path to the C000041 2025-Q1 bronze data
-    lake_path = Path("/home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/data/lake/C000041/2025-Q1/bronze")
+    lake_path = Path(f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake/C000041/2025-Q1/bronze")
     contracts_file = lake_path / "contracts.parquet"
 
     if not contracts_file.exists():

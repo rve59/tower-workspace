@@ -1,7 +1,8 @@
+import os
 import polars as pl
 from pathlib import Path
 
-LAKE_ROOT = Path("tower_kernel/data/lake")
+LAKE_ROOT = Path(f"{os.environ.get('TOWER_DATA_ROOT', f"{os.environ.get('TOWER_DATA_ROOT', 'tower_kernel/data')}')}/lake")
 
 def get_transaction_sizes():
     results = []

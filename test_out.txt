@@ -1,0 +1,488 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0
+rootdir: /home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel
+configfile: pyproject.toml
+plugins: anyio-4.13.0, cov-7.1.0
+collected 12 items
+
+tower_kernel/tests/test_positive_assertions.py [TRANSPILER] Rule: MATCH (t:Transactions), (r:Registry)
+WHERE (t.sell...
+[TRANSPILER] Expr: (TRUE) & (pl.col('seller_company_name') != pl.col('legal_name'))
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id', 'legal_name']
+[TRANSPILER] Rule: MATCH (id:Ident)
+WHERE (id.filer_unique_id IS NULL...
+[TRANSPILER] Expr: (pl.col('filer_unique_id') .is_null()) | (pl.col('filer_unique_id') == '')
+[TRANSPILER] Cols: ['company_name', 'company_identifier', 'contact_name', 'contact_title', 'contact_address', 'contact_city', 'contact_state', 'contact_zip', 'contact_country', 'contact_phone', 'contact_email', 'agent_name', 'agent_title', 'agent_address', 'agent_city', 'agent_state', 'agent_zip', 'agent_country', 'agent_phone', 'agent_email', 'filer_unique_id', 'source_row_index', 'filing_type', 'tower_unique_id', 'transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'contract_service_agreement_id', 'customer_company_name', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'source_filename']
+[TRANSPILER] Rule: MATCH (id:Ident)
+WHERE (id.contact_email IS NOT NU...
+[TRANSPILER] Expr: (pl.col('contact_email') .is_not_null()) & (~ (pl.col('contact_email') ==~ '^.+@.+\\..+$'))
+[TRANSPILER] Cols: ['company_name', 'company_identifier', 'contact_name', 'contact_title', 'contact_address', 'contact_city', 'contact_state', 'contact_zip', 'contact_country', 'contact_phone', 'contact_email', 'agent_name', 'agent_title', 'agent_address', 'agent_city', 'agent_state', 'agent_zip', 'agent_country', 'agent_phone', 'agent_email', 'filer_unique_id', 'source_row_index', 'filing_type', 'tower_unique_id', 'transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'contract_service_agreement_id', 'customer_company_name', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'source_filename']
+[TRANSPILER] Filter error: bad operand type for unary ~: 'str'
+[TRANSPILER] Rule: MATCH (c:Contracts)
+WHERE (c.customer_company_name...
+[TRANSPILER] Expr: (pl.col('customer_company_name') .is_null()) | (pl.col('product_name') .is_null())
+[TRANSPILER] Cols: ['contract_unique_id', 'contract_service_agreement_id', 'seller_company_name', 'customer_company_name', 'product_name', 'contract_execution_date', 'commencement_date_of_contract_term', 'contract_termination_date', 'actual_termination_date', 'contract_affiliate', 'ferc_tariff_reference', 'source_row_index', 'filing_type', 'tower_unique_id', 'transaction_unique_id', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'execution_date', 'commencement_date', 'termination_date', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (id:Ident)
+WHERE (id.contact_name IS NULL) O...
+[TRANSPILER] Expr: (pl.col('contact_name') .is_null()) | (pl.col('contact_name') == '')
+[TRANSPILER] Cols: ['company_name', 'company_identifier', 'contact_name', 'contact_title', 'contact_address', 'contact_city', 'contact_state', 'contact_zip', 'contact_country', 'contact_phone', 'contact_email', 'agent_name', 'agent_title', 'agent_address', 'agent_city', 'agent_state', 'agent_zip', 'agent_country', 'agent_phone', 'agent_email', 'filer_unique_id', 'source_row_index', 'filing_type', 'tower_unique_id', 'transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'contract_service_agreement_id', 'customer_company_name', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'source_filename']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.price IS NULL) OR ...
+[TRANSPILER] Expr: (pl.col('price') .is_null()) | (pl.col('transaction_quantity') .is_null())
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.product_name = 'EN...
+[TRANSPILER] Expr: (pl.col('product_name') == 'ENERGY') & ((pl.col('rate_units') == '$/MW') | (pl.col('rate_units') == '$/KW'))
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.product_name = 'CA...
+[TRANSPILER] Expr: (pl.col('product_name') == 'CAPACITY') & ((pl.col('rate_units') == '$/MWH') | (pl.col('rate_units') == '$/KWH'))
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.rate_units = '$/MW...
+[TRANSPILER] Expr: (pl.col('rate_units') == '$/MWH') & (pl.col('price').cast(pl.Float64) > 1000.0)
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (c:Contracts)
+WHERE (c.execution_date IS NOT...
+[TRANSPILER] Expr: (pl.col('execution_date') .is_not_null()) & ((pl.col('execution_date') < '1900-01-01') | (pl.col('execution_date') < '19000101'))
+[TRANSPILER] Cols: ['contract_unique_id', 'contract_service_agreement_id', 'seller_company_name', 'customer_company_name', 'product_name', 'contract_execution_date', 'commencement_date_of_contract_term', 'contract_termination_date', 'actual_termination_date', 'contract_affiliate', 'ferc_tariff_reference', 'source_row_index', 'filing_type', 'tower_unique_id', 'transaction_unique_id', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'execution_date', 'commencement_date', 'termination_date', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (c:Contracts)
+WHERE (c.contract_affiliate IS...
+[TRANSPILER] Expr: (pl.col('contract_affiliate') .is_not_null()) & (~ (pl.col('contract_affiliate').is_in(['Y', 'N'])))
+[TRANSPILER] Cols: ['contract_unique_id', 'contract_service_agreement_id', 'seller_company_name', 'customer_company_name', 'product_name', 'contract_execution_date', 'commencement_date_of_contract_term', 'contract_termination_date', 'actual_termination_date', 'contract_affiliate', 'ferc_tariff_reference', 'source_row_index', 'filing_type', 'tower_unique_id', 'transaction_unique_id', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'execution_date', 'commencement_date', 'termination_date', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (c:Contracts)
+WHERE (c.ferc_tariff_reference...
+[TRANSPILER] Expr: (pl.col('ferc_tariff_reference') .is_null()) | (pl.col('ferc_tariff_reference') == '')
+[TRANSPILER] Cols: ['contract_unique_id', 'contract_service_agreement_id', 'seller_company_name', 'customer_company_name', 'product_name', 'contract_execution_date', 'commencement_date_of_contract_term', 'contract_termination_date', 'actual_termination_date', 'contract_affiliate', 'ferc_tariff_reference', 'source_row_index', 'filing_type', 'tower_unique_id', 'transaction_unique_id', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'execution_date', 'commencement_date', 'termination_date', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.rate_units IS NOT ...
+[TRANSPILER] Expr: (pl.col('rate_units') .is_not_null()) & (~ (pl.col('rate_units').is_in(['$/MW', '$/MWH', '$/KW', '$/KWH', '$/KV', 'cents/KWH', '$/MW-DAY', '$/MW-MONTH', '$/MW-YEAR', 'MW', 'MWH', 'KW', 'KWH', 'KV', 'FLAT RATE'])))
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.point_of_delivery_...
+[TRANSPILER] Expr: (pl.col('point_of_delivery_balancing_authority') .is_not_null()) & (~ (pl.col('point_of_delivery_balancing_authority').is_in(['CAISO', 'PJM', 'MISO', 'ERCOT', 'SPP', 'NYISO', 'ISONE', 'AECC', 'AEC', 'AESL', 'AZPS', 'BANC', 'BPAT', 'CHPD', 'CPBW', 'CPLC', 'CSWS', 'DEAA', 'DOPD', 'DUK', 'EEI', 'EES', 'FPC', 'FPL', 'GCPD', 'GWA', 'HQT', 'HST', 'IID', 'IPCO', 'ISNE', 'JEA', 'LDWP', 'PSEI', 'BCHA', 'NWMT', 'TPWR', 'HUB', 'AVA', 'SCL', 'PACW', 'PACE', 'PGE', 'WACM', 'WALC', 'WAUW'])))
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.transaction_unique...
+[TRANSPILER] Expr: (pl.col('transaction_unique_id') .is_null()) | (pl.col('transaction_unique_id') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.transaction_end_da...
+[TRANSPILER] Expr: (pl.col('transaction_end_date') < pl.col('transaction_begin_date'))
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (abs((toFloat(t.price...
+[TRANSPILER] Expr: (abs((pl.col('price').cast(pl.Float64) * pl.col('transaction_quantity').cast(pl.Float64)) - pl.col('total_transaction_charge').cast(pl.Float64)) > 1.0)
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.class_name IS NULL...
+[TRANSPILER] Expr: (pl.col('class_name') .is_null()) | (pl.col('class_name') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.term_name IS NULL)...
+[TRANSPILER] Expr: (pl.col('term_name') .is_null()) | (pl.col('term_name') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.increment_name IS ...
+[TRANSPILER] Expr: (pl.col('increment_name') .is_null()) | (pl.col('increment_name') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.increment_peaking_...
+[TRANSPILER] Expr: (pl.col('increment_peaking_name') .is_null()) | (pl.col('increment_peaking_name') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.product_name IS NU...
+[TRANSPILER] Expr: (pl.col('product_name') .is_null()) | (pl.col('product_name') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.rate_units IS NULL...
+[TRANSPILER] Expr: (pl.col('rate_units') .is_null()) | (pl.col('rate_units') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.time_zone IS NULL)...
+[TRANSPILER] Expr: (pl.col('time_zone') .is_null()) | (pl.col('time_zone') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.point_of_delivery_...
+[TRANSPILER] Expr: (pl.col('point_of_delivery_balancing_authority') .is_null()) | (pl.col('point_of_delivery_balancing_authority') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.transaction_quanti...
+[TRANSPILER] Expr: (pl.col('transaction_quantity') .is_null()) | (pl.col('transaction_quantity') == '')
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (toFloat(t.transactio...
+[TRANSPILER] Expr: (pl.col('transaction_quantity').cast(pl.Float64) == 0.0) & (pl.col('total_transaction_charge').cast(pl.Float64) == 0.0)
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (toFloat(t.transactio...
+[TRANSPILER] Expr: (pl.col('transaction_quantity').cast(pl.Float64) <= 0.0)
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.product_name IN ['...
+[TRANSPILER] Expr: (pl.col('product_name').is_in(['ENERGY', 'CAPACITY', 'BOOKED OUT POWER'])) & (pl.col('standardized_price') .is_null())
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.product_name IN ['...
+[TRANSPILER] Expr: (pl.col('product_name').is_in(['ENERGY', 'CAPACITY', 'BOOKED OUT POWER'])) & (pl.col('standardized_quantity') .is_null())
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+[TRANSPILER] Rule: MATCH (t:Transactions)
+WHERE (t.price IS NOT NULL)...
+[TRANSPILER] Expr: (pl.col('price') .is_not_null()) & (pl.col('price') != '') & (pl.col('price').cast(pl.Float64) .is_null())
+[TRANSPILER] Cols: ['transaction_unique_id', 'contract_unique_id', 'seller_company_name', 'customer_company_name', 'product_name', 'product_type_name', 'rate_units', 'total_transaction_charge', 'total_transmission_charge', 'transaction_quantity', 'price', 'transaction_begin_date', 'transaction_end_date', 'class_name', 'term_name', 'increment_name', 'increment_peaking_name', 'time_zone', 'point_of_delivery_balancing_authority', 'point_of_delivery_specific_location', 'ferc_tariff_reference', 'trade_date', 'type_of_rate', 'standardized_price', 'standardized_quantity', 'filing_type', 'source_row_index', 'tower_unique_id', 'contract_service_agreement_id', 'execution_date', 'commencement_date', 'termination_date', 'actual_termination_date', 'contract_affiliate', 'seller_cid', 'contact_email', 'contact_name', 'source_filename', 'filer_unique_id']
+Golden Dataset is NOT clean! It failed the following rules:
+ - F.16.3.1: 1 violations
+ - F.25.18: 1 violations
+EEEEEEEEEEEE
+
+==================================== ERRORS ====================================
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.24.1-mutation_config0] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.24.3-mutation_config1] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.24.6-mutation_config2] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.17.8.1-mutation_config3] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.21.5-mutation_config4] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.25.2.1-mutation_config5] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.25.2.2-mutation_config6] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.25.2.5-mutation_config7] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.23.5-mutation_config8] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.22.3-mutation_config9] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[F.16.8-mutation_config10] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+_ ERROR at setup of TestPositiveAssertions.test_rule_violation[D.3.9.1-mutation_config11] _
+
+cls = <class 'test_positive_assertions.TestPositiveAssertions'>
+
+    @classmethod
+    def setup_class(cls):
+        """Verify the Golden Dataset passes all rules before we start mutating."""
+        cls.ident, cls.contract, cls.tx = get_golden_data()
+    
+        metadata = {"company_id": "C000171", "period": "2025-Q1"}
+        errors, stats = run_benchmarked_validation(
+            ldf=cls.tx,
+            identity_ldf=cls.ident,
+            contract_ldf=cls.contract,
+            metadata=metadata
+        )
+    
+        total_errors = errors.height
+        if total_errors > 0:
+            print("Golden Dataset is NOT clean! It failed the following rules:")
+            for s in stats:
+                if s.get("error_count", 0) > 0:
+                    print(f" - {s['rule_id']}: {s['error_count']} violations")
+>           pytest.fail("Golden dataset must pass all rules initially.")
+E           Failed: Golden dataset must pass all rules initially.
+
+tower_kernel/tests/test_positive_assertions.py:131: Failed
+=============================== warnings summary ===============================
+tests/test_positive_assertions.py: 177 warnings
+  /home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/src/tower_kernel/rules/eqr.py:227: DeprecationWarning: the `streaming` parameter was deprecated in 1.25.0; use `engine` instead.
+    error_df = collected_ldf.collect(engine=engine, streaming=(engine == "cpu"))
+
+tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.24.1-mutation_config0]
+tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.24.1-mutation_config0]
+  /home/raynier/Development/workspaces/fullstack/vibes/TOWER_WORKSPACE/tower_kernel/src/tower_kernel/rules/transpiler.py:82: DeprecationWarning: `pl.count()` is deprecated. Please use `pl.len()` instead.
+  (Deprecated in version 0.20.5)
+    ldf = ldf.group_by(group_names).agg(pl.count().alias("c")).filter(eval(expr, {"pl": pl, "TRUE": True, "FALSE": False}, {}))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.24.1-mutation_config0]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.24.3-mutation_config1]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.24.6-mutation_config2]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.17.8.1-mutation_config3]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.21.5-mutation_config4]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.25.2.1-mutation_config5]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.25.2.2-mutation_config6]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.25.2.5-mutation_config7]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.23.5-mutation_config8]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.22.3-mutation_config9]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[F.16.8-mutation_config10]
+ERROR tower_kernel/tests/test_positive_assertions.py::TestPositiveAssertions::test_rule_violation[D.3.9.1-mutation_config11]
+======================= 179 warnings, 12 errors in 0.63s =======================
